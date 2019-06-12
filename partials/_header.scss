@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1600px;
+}
+
+header {
+    border: 3px solid green;
+    width: 100vw;
+    height: 100vh;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

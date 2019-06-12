@@ -1,0 +1,44 @@
+$offBlack: #0f0a0a;
+$offWhite: #eaf2ef;
+$colorPrimary: #1ef3ed;
+$colorSecondary: #fe4a49;
+
+// $colortertiary: 
+html {
+    background-color: $offBlack;
+    color: $offWhite;
+    font-size: 125%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header, .aboutPage, .skillsExperience, .blogPortfolio ,footer {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+
+}
