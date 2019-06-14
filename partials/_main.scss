@@ -1,0 +1,69 @@
+.portfolioOne,
+.portfolioTwo,
+.portfolioThree {
+    display: flex;
+    // width:100vw;
+}
+
+.portfolioOne {
+    border: 3px yellow solid;
+    background-color: $backColorSecond;
+}
+
+.portfolioTwo {
+    border: 3px orange solid;
+    background-color: $backColorThird;
+}
+
+.portfolioThree {
+    border: 3px purple solid;
+    background-color: $backColorFourth;
+}
+
+main {
+
+    aside,
+    article {
+        // background-color:green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        object-fit: cover;
+        // height: 100vh;
+    }
+
+}
+
+.projectOnePic,
+.projectSecondPic,
+.projectTThirdPic {
+    font-size: 0;
+    // width: 100%;
+    padding: 5%;
+    object-fit: cover;
+
+    img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+}
+
+.projectOnePic {
+    border: 3px solid black;
+    // background-color: green;
+}
+
+.projectSecondPic {
+    border: 3px solid black;
+}
+
+.projectTThirdPic {
+    border: 3px solid black;
+}
+
+.aboutMe {
+    background-color: $backColorFifth;
+}

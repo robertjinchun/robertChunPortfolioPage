@@ -1,9 +1,17 @@
 $offBlack: #0f0a0a;
 $offWhite: #eaf2ef;
-$colorPrimary: #1ef3ed;
-$colorSecondary: #fe4a49;
+$backColorFirst: #7be5ab;
+$backColorFourth: #bbef83;
+$backColorThird: #e85868;
+$backColorFifth: #fbd1a2;
+$backColorSecond: #e9d758;
+$backColorSixth: #ffc857;
+// $colortertiary: not sure
+$fontPrimary: 'Lato',
+sans-serif;
+$fontSecondary: 'Josefin Slab',
+serif;
 
-// $colortertiary: 
 html {
     background-color: $offBlack;
     color: $offWhite;
@@ -17,9 +25,29 @@ body {
     align-items: center;
 }
 
-header, .aboutPage, .skillsExperience, .blogPortfolio ,footer {
+header,
+.portfolioOne,
+.portfolioTwo,
+.portfolioThree,
+.aboutMe,
+footer {
     width: 100vw;
     height: 100vh;
+    max-height: 2160px;
+    max-width: 3840px;
+    // 568
+    min-height: 568px;
+    min-width: 320px;
+}
+li{
+    list-style:none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $fontPrimary;
 }
 
 h1 {
@@ -39,6 +67,6 @@ h4 {
 }
 
 p {
-    font-size: 1rem;
-
+    font-size: 1.3rem;
+    font-family: $fontSecondary;
 }

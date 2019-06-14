@@ -1,16 +1,17 @@
 
 $("#typed").typing({
-    strings: ['a UI Developer !', 'a Front End Developer !!', 'a UX Designer !!!', 'Jeya Prakash :)'],
-    eraseDelay: 10,
-    typeDelay: 70,
+    strings: ['Hey!', 'My name is Robert', 'I am a Front End Developer !!', 'I am also an avid climber', 'Please enjoy my portfolio'],
+    eraseDelay: 50,
+    typeDelay: 85,
     stringStartDelay: 1000,
-    color: 'red',
-    typingColor: 'black',
+    color: '#eaf2ef',
+
+    typingColor: '#eaf2ef',
     typingOpacity: '0.1',
-    loopCount: 3,
-    cursorBlink: false,
+    loopCount: 5,
+    cursorBlink: true,
     cursorChar: '<small>_</small>',
-    fade: true,
+    fade: false,
     onTyping: function () {
         console.log('onTyping');
     },
