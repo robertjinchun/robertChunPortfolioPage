@@ -9,8 +9,7 @@ $backColorSixth: #ffc857;
 // $colortertiary: not sure
 $fontPrimary: 'Lato',
 sans-serif;
-$fontSecondary: 'Josefin Slab',
-serif;
+$fontSecondary: 'Ubuntu',sans-serif;
 
 html {
     background-color: $offBlack;
@@ -39,8 +38,9 @@ footer {
     min-height: 568px;
     min-width: 320px;
 }
-li{
-    list-style:none;
+
+li {
+    list-style: none;
 }
 
 h1,
@@ -66,7 +66,7 @@ h4 {
     font-size: 2rem;
 }
 
-p {
+p, li {
     font-size: 1.3rem;
     font-family: $fontSecondary;
 }

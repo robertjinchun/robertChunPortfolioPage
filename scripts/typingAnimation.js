@@ -1,12 +1,12 @@
 
 $("#typed").typing({
-    strings: ['Hey!', 'My name is Robert', 'I am a Front End Developer !!', 'I am also an avid climber', 'Please enjoy my portfolio'],
+    strings: ['Hey! \u{1F44B}', 'My name is Robert', 'I am a Web Developer!!', 'I enjoy coding', 'I enjoy climbing', 'I like robots', 'Enjoy!'],
     eraseDelay: 50,
     typeDelay: 85,
-    stringStartDelay: 1000,
-    color: '#eaf2ef',
+    stringStartDelay: 1500,
+    color: '#7be5ab',
 
-    typingColor: '#eaf2ef',
+    typingColor: '#7be5ab',
     typingOpacity: '0.1',
     loopCount: 5,
     cursorBlink: true,

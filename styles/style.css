@@ -273,18 +273,19 @@ h4 {
   font-size: 2rem;
 }
 
-p {
+p, li {
   font-size: 1.3rem;
-  font-family: "Josefin Slab", serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7%;
 }
 
 header {
@@ -296,10 +297,14 @@ header {
 
 header {
   border: 3px solid green;
-  background-color: #7be5ab;
+  background-color: #0f0a0a;
+  color: #7be5ab;
 }
 
 .directionalNav {
+  position: fixed;
+  top: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,13 +318,12 @@ header {
 }
 
 .socialMediaNav {
+  position: fixed;
+  right: 0;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -367,17 +371,17 @@ header {
 
 .portfolioOne {
   border: 3px yellow solid;
-  background-color: #e9d758;
+  background-color: #0f0a0a;
 }
 
 .portfolioTwo {
   border: 3px orange solid;
-  background-color: #e85868;
+  background-color: #0f0a0a;
 }
 
 .portfolioThree {
   border: 3px purple solid;
-  background-color: #bbef83;
+  background-color: #0f0a0a;
 }
 
 main aside,
@@ -404,7 +408,7 @@ main article {
 .projectSecondPic,
 .projectTThirdPic {
   font-size: 0;
-  padding: 5%;
+  padding: 10%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -413,7 +417,7 @@ main article {
 .projectSecondPic img,
 .projectTThirdPic img {
   width: 100%;
-  height: 80vh;
+  height: 30vh;
   -o-object-fit: cover;
      object-fit: cover;
 }

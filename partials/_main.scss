@@ -7,17 +7,17 @@
 
 .portfolioOne {
     border: 3px yellow solid;
-    background-color: $backColorSecond;
+    background-color: $offBlack;
 }
 
 .portfolioTwo {
     border: 3px orange solid;
-    background-color: $backColorThird;
+    background-color: $offBlack;
 }
 
 .portfolioThree {
     border: 3px purple solid;
-    background-color: $backColorFourth;
+    background-color: $offBlack;
 }
 
 main {
@@ -41,12 +41,12 @@ main {
 .projectTThirdPic {
     font-size: 0;
     // width: 100%;
-    padding: 5%;
+    padding: 10%;
     object-fit: cover;
 
     img {
         width: 100%;
-        height: 80vh;
+        height: 30vh;
         object-fit: cover;
     }
 }
