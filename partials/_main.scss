@@ -47,19 +47,25 @@
 }
 
 .aboutMe aside {
-    width: 40%;
+    width: 10%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 3px solid $backColorThird;
-    border-radius: 20px;
-    margin: 5%;
+    // margin-bottom:45%;
+    //     justify-content: center;
+    //     align-items: center;
+    //     flex-direction: column;
+    //     border: 3px solid $backColorThird;
+    //     border-radius: 20px;
+    //     margin: 5%;
 }
 
 .aboutMe article {
-    width: 40%;
+    width: 70%;
     margin: 5%;
+}
+
+.picturePerfect {
+    display: flex;
+    align-items: center;
 }
 
 .portfolioOne,
@@ -73,6 +79,12 @@
 }
 
 .portfolioInnerOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioInnerAbout {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,25 +108,23 @@
     background-color: $offBlack;
 }
 
-.innerColorTwo {
-    border-top: 2px solid $backColorThird;
-    border-bottom: 2px solid $backColorThird;
-}
+// .innerColorTwo {
+//     border-top: 2px solid $backColorThird;
+//     border-bottom: 2px solid $backColorThird;
+// }
 
-.innerColorThree {
-    border-top: 2px solid $backColorThird;
-    border-bottom: 2px solid $backColorThird;
-}
+// .innerColorThree {
+//     border-top: 2px solid $backColorThird;
+//     border-bottom: 2px solid $backColorThird;
+// }
 
-.innerColorThree {
-    border-top: 2px solid $backColorFourth;
-    border-bottom: 2px solid $backColorFourth;
-}
-
+// .innerColorThree {
+//     border-top: 2px solid $backColorFourth;
+//     border-bottom: 2px solid $backColorFourth;
+// }
 
 .projectOnePic {
     width: 90%;
-    // height: 300px;
     margin: 10% 0 10% 0;
     display: flex;
     justify-content: space-around;
@@ -147,8 +157,9 @@
     height: 70px;
     // border-radius: 20px;
     flex-shrink: 1;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    // margin-top: 10px;
+    margin: 10% 0 10% 0;
+    // margin-bottom: 5px;
 }
 
 .projTwoBox {
@@ -212,8 +223,26 @@
 
     img {
         border: 3px solid $backColorThird;
-        border-radius: 50%;
-        width: 40%;
+        // border-radius: 50%;
+        width: 100px;
         // height:50%;
     }
+}
+
+.skills {
+    display: flex;
+    // justify-content: center;
+
+    div {
+        padding: 0 5% 0 5%;
+    }
+
+    i {
+        color: $backColorThird;
+        width:80%;
+    }
+}
+
+.aboutTitle{
+    margin-left:5%;
 }

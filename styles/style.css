@@ -335,7 +335,25 @@ header {
   height: 90%;
 }
 
-.innerColorOne {
+.overlay {
+  position: fixed;
+  width: 95vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.innerLay {
+  position: fixed;
+  width: 90%;
+  height: 90%;
   border-top: 2px solid #e85868;
   border-bottom: 2px solid #e85868;
 }
@@ -460,28 +478,24 @@ header {
 }
 
 .aboutMe aside {
-  width: 40%;
+  width: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 3px solid #e85868;
-  border-radius: 20px;
-  margin: 5%;
 }
 
 .aboutMe article {
-  width: 40%;
+  width: 70%;
   margin: 5%;
+}
+
+.picturePerfect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolioOne,
@@ -515,6 +529,18 @@ header {
           align-items: center;
 }
 
+.portfolioInnerAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .portfolioOne {
   color: #7be5ab;
   background-color: #0f0a0a;
@@ -528,21 +554,6 @@ header {
 .portfolioThree {
   color: #7be5ab;
   background-color: #0f0a0a;
-}
-
-.innerColorTwo {
-  border-top: 2px solid #e85868;
-  border-bottom: 2px solid #e85868;
-}
-
-.innerColorThree {
-  border-top: 2px solid #e85868;
-  border-bottom: 2px solid #e85868;
-}
-
-.innerColorThree {
-  border-top: 2px solid #bbef83;
-  border-bottom: 2px solid #bbef83;
 }
 
 .projectOnePic {
@@ -594,8 +605,7 @@ header {
   height: 70px;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin: 10% 0 10% 0;
 }
 
 .projTwoBox {
@@ -650,8 +660,26 @@ header {
 
 .aboutMe img {
   border: 3px solid #e85868;
-  border-radius: 50%;
-  width: 40%;
+  width: 100px;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills div {
+  padding: 0 5% 0 5%;
+}
+
+.skills i {
+  color: #e85868;
+  width: 80%;
+}
+
+.aboutTitle {
+  margin-left: 5%;
 }
 
 footer {

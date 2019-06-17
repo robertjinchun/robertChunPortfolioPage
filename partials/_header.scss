@@ -47,6 +47,24 @@ header {
 }
 
 .innerColorOne {
+    // border-top: 2px solid $backColorThird;
+    // border-bottom: 2px solid $backColorThird;
+    // position:fixed;
+}
+
+.overlay {
+    position: fixed;
+    width: 95vw;
+    height: 100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.innerLay {
+    position: fixed;
+    width:90%;
+    height:90%;
     border-top: 2px solid $backColorThird;
     border-bottom: 2px solid $backColorThird;
 }
