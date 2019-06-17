@@ -7,185 +7,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet">
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Content will contain the first thing the visitor will see -->
-    <header class="wrapper">
-        <h1 class="hiddenOne">Robert Chun Portfolio</h1>
+    <header>
+        <div class="innerLayer innerLayerHeader innerColorOne">
+            <h1 class="hiddenOne">Robert Chun Portfolio</h1>
+            <div class="logo">
+                <h4>
+                    &#60;<span class="logoColor">&#47;</span>&#62;
+                </h4>
+            </div>
+            <nav class="directionalNav">
+                <ul>
+                    <li>Projects</li>
+                    <li>About Me</li>
+                    <li>Skills/Contact</li>
+                </ul>
+            </nav>
+            <!-- This h2 is for text disappearing and reappearing -->
+            <div class="typing Animation">
+                <!-- <h4>To those who are curious</h4> -->
+                <h2>
+                    <span id="typed"></span><span class="cursor"></span>
+                </h2>
+            </div>
 
-        <nav class="directionalNav">
-            <li>Projects</li>
-            <li>About Me</li>
-            <li>Skills/Contact</li>
-        </nav>
-        <!-- This h2 is for text disappearing and reappearing -->
-        <div class="typing Animation">
-            <h4>To those who are curious</h4>
-            <h2>
-                <span id="typed"></span><span class="cursor"></span>
-            </h2>
+            <nav class="socialMediaNav">
+                <ul>
+                    <li><i class="fab fa-github fa-lg"></i></li>
+                    <li><i class="fab fa-twitter fa-lg"></i></li>
+                    <li><i class="fab fa-medium fa-lg"></i></li>
+                </ul>
+
+            </nav>
+            <!-- Hey! My name is Robert Chun-->
+            <!-- I am a front end Developer -->
+            <!-- I am an avid climber -->
+            <!-- There is probably more -->
         </div>
 
-        <nav class="socialMediaNav">
-            <li><i class="fab fa-github"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-medium"></i></li>
-        </nav>
-        <!-- Hey! My name is Robert Chun-->
-        <!-- I am a front end Developer -->
-        <!-- I am an avid climber -->
-        <!-- There is probably more -->
     </header>
     <!-- Main is split up in to a couple of sections -->
     <!-- About me section, skills and experience, portfolio section -->
     <main>
         <section class="portfolioOne">
-            <aside>
-                <!-- Type it Picture -->
-                <div class="projectOnePic">
-                    <img src="./assets/projectOneDemo.PNG" alt="Project One Demo">
-                </div>
-            </aside>
-
-            <article>
-                <div>
-                    <!-- title -->
-                    <div class="projTitle">
-                        <h2>Type Alot</h2>
+            <div class="innerLayer innerColorTwo portfolioInnerOne">
+                <aside>
+                    <div class="projTitle wrapper">
+                        <h4>Type Alot</h4>
                     </div>
-                    <!-- description -->
-                    <div class="projectDescription">
-                        <p>Type Alot is a typing game that was created with JavaScript using JQuery Library.</p>
-                        <p>The objective of the game is to type the letters that appear as fast as you can to achieve the highest score</p>
-                        <p>Features:</p>
-                        <p>Use event handlers to achieve inputs from users keyboard</p>
-                        <p>Use the rest feature to split a four letter word in to individual characters</p>
-                        <p>Convert an individual character inputed by the user and individual character of each letter in the word in to ascii numbers and compare the values with one another</p>
-                        <p>Real time scoring system and timer incoperated</p>
-                    </div>
-                    <!-- date -->
-                    <div>
-                        <div>
-
+                    <!-- Type it Picture -->
+                    <div class="projectOnePic">
+                        <div class="projOneBox">
                         </div>
-                        <div>
-
+                        <div class="projOneBox">
+                        </div>
+                        <div class="projOneBox">
+                        </div>
+                        <div class="projOneBox">
                         </div>
                     </div>
-                    <!-- credits -->
-                    <div>
-
+                    <div class="projectOneButton">
+                        <h4>Play?</h4>
                     </div>
-                </div>
-            </article>
+                </aside>
+
+                <article>
+                    <div>
+                        <!-- title -->
+
+                        <!-- description -->
+                        <div class="projectDescription">
+                            <p>Objectives:</p>
+                            <p>Type letters that appear</p>
+                            <p>Features:</p>
+                            <p>Event handlers</p>
+                            <p>Spread method</p>
+                            <p>String Manipulation<p>
+                                    <p>Real time scoring system</p>
+                                    <p>Timer</p>
+                        </div>
+                </article>
+            </div>
+
         </section>
         <!-- skills and experience -->
-        <section class="portfolioTwo wrapper">
-            <article>
-                <div>
-                    <!-- title -->
+        <section class="portfolioTwo">
+            <div class="innerLayer innerColorThree portfolioInnerOne">
+                <article>
+                    <div>
+                        <!-- title -->
+                        
+                        <!-- description -->
+                        <div class="projectDescription">
+                            <p>Objective</p>
+                            <p>Garbage? or Blue Bin?</p>
+                            <p>Features:</p>
+                            <p>City of Toronto Waste Wizard API</p>
+                            <p>Event handlers</p>
+                            <p>Separate features using components</p>
+                            <p>Use regex to filter and clean API</p>
+                        </div>
+                    </div>
+                </article>
+                <aside>
                     <div class="projTitle">
-                        <h2>Autocomplete</h2>
+                        <h4>Recycle T.O</h4>
                     </div>
-                    <!-- description -->
-                    <div class="projectDescription">
-                        <p>Recycle T.O is an informative single page application using react to inform users where to put their garbage
-                        </p>
-                        <p>Clicking on either the blue bin or garbage will bring up a list of items that lets users know where to throw out their garbage
-                        </p>
-                        <p>Features:</p>
-                        <p>Use event handlers to recieve mouse click from user</p>
-                        <p>Build upon the waste wizard API supplied by the city of Toronto</p>
-                        <p>Utalize regex to clean and filter content from the API</p>
-                        <p>Separate features in to individual components</p>
-                    </div>
-                    <!-- date -->
-                    <div>
-                        <div>
-                
+                    <!-- Type it Picture -->
+                    <div class="projectTwoPic">
+                        <div class="projTwoBox">
                         </div>
-                        <div>
-                
+                        <div class="projTwoBox">
+                        </div>
+                        <div class="projTwoBox">
+                        </div>
+                        <div class="projTwoBox">
+                        </div>
+                        <div class="projTwoBox">
+                        </div>
+                        <div class="projTwoBox">
                         </div>
                     </div>
-                    <!-- credits -->
-                    <div>
-                
+                    <div class="projectTwoButton">
+                        <h4>Explore!</h4>
                     </div>
-                </div>
-            </article>
-            <aside>
-                <!-- Type it Picture -->
-                <div class="projectOnePic">
-                    <img src="./assets/projectTwoDemo.PNG" alt="Project Two Demo">
-                </div>
-            </aside>
+                </aside>
+
+            </div>
+
         </section>
         <!-- Contains a link to my blog posts as well as portfolio -->
         <section class="portfolioThree wrapper">
-            <aside>
-                <div class="projectOnePic">
-                    <img src="./assets/projectThreeDemo.PNG" alt="Project Three Demo">
-                </div>
-            </aside>
-            <article>
-                <div>
-                    <!-- title -->
+            <div class="innerLayer innerColorThree portfolioInnerOne">
+                <aside>
                     <div class="projTitle">
-                        <h2>Recycle T.O</h2>
+                        <h4>Autocomplete</h4>
                     </div>
-                    <!-- description -->
-                    <div class="projectDescription">
-                        <p>Autocomplete is a windows 95 theme project using react with a team of four</p>
-                        <p>Typing letters in to the space provided will give the user suggested words and provide a link to a wikipedia page
-                        </p>
-                        <p>Features:</p>
-                        <p>Use event handlers to recieve button inputs</p>
-                        <p>Built upon the Data Muse API for suggested outputs to user</p>
-                        <p>Utalize regex to filter out undesirable user inputs</p>
-                        <p>Collaborated with a group of four to complete project</p>
-                    </div>
-                    <!-- date -->
-                    <div>
-                        <div>
-                
-                        </div>
-                        <div>
-                
+                    <div class="projectTheePic">
+                        <div class="projThreeBox">
                         </div>
                     </div>
-                    <!-- credits -->
-                    <div>
-                
+                    <div class="projectThreeButton">
+                        <h4>Search!</h4>
                     </div>
-                </div>
-            </article>
+                </aside>
+                <article>
+                    <div>
+                        <!-- title -->
+                        
+                        <!-- description -->
+                        <div class="projectDescription">
+                            <p>Objective</p>
+                            <p>Completes your words before you do</p>
+                            <p>Features:</p>
+                            <p>Data Muse API for suggested outputs to user</p>
+                            <p>Utalize regex for error handling</p>
+                            <p>Collaborated with a group of four to complete project</p>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+
         </section>
         <section class="aboutMe wrapper">
-            <aside>
+            <div class="innerLayer innerColorThree portfolioInnerOne">
+                <aside>
+                    <img src="./assets/headShot.PNG" alt="My name is Robert">
+                </aside>
+                <article>
+                    <h3>About Me</h3>
+                    <P>I help build the internet</P>
+                    <p>I enjoy asking questions, breaking things, and putting them back together</p>
+                    <p>My past experience is in electromechanical technology automation and robotics</p>
+                    <p>Looking for an addition your team?
+                        Send me an e-mail</p>
+                </article>
+            </div>
 
-            </aside>
-            <article>
-                <h2>About Me</h2>
-                <p>My name is Robert. I am a resident of Toronto, Ontario</p>
-                <P>I am passionate about building the internet</P>
-                <p>My past experience is in robotics and automation</p>
-                <p>I am still enthousiastic about robotics and anutomation, I just wanted be more involved in software</p>
-                <p>Most of my free time is spent coding, climbing, or prototyping using 3d printers and laser cutters</p>
-                <p>If you are interested in what I have done so far or are looking for a candidate for your team, send me an e-mail, or dm me on twitter. I am a free agent</p>
-            </article>
         </section>
+
     </main>
     <!-- Footer contains information about where people can contact me -->
-    <footer class="skillsContact wrapper">
 
-    </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous">

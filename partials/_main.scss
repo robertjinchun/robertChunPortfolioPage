@@ -1,69 +1,219 @@
+.portfolioOne aside {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid $backColorThird;
+    border-radius: 20px;
+    margin: 5%;
+}
+
+.portfolioOne article {
+    width: 40%;
+    margin: 5%;
+}
+
+.portfolioTwo aside {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid $backColorThird;
+    border-radius: 20px;
+    margin: 5%;
+}
+
+.portfolioTwo article {
+    width: 40%;
+    margin: 5%;
+}
+
+.portfolioThree aside {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid $backColorThird;
+    border-radius: 20px;
+    margin: 5%;
+}
+
+.portfolioThree article {
+    width: 40%;
+    margin: 5%;
+}
+
+.aboutMe aside {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid $backColorThird;
+    border-radius: 20px;
+    margin: 5%;
+}
+
+.aboutMe article {
+    width: 40%;
+    margin: 5%;
+}
+
 .portfolioOne,
 .portfolioTwo,
-.portfolioThree {
+.portfolioThree,
+.aboutMe {
     display: flex;
-    // width:100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioInnerOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolioOne {
-    border: 3px yellow solid;
+    // border: 3px yellow solid;
+    color: $backColorFirst;
     background-color: $offBlack;
 }
 
 .portfolioTwo {
-    border: 3px orange solid;
+    // border: 3px orange solid;
+    color: $backColorFirst;
     background-color: $offBlack;
 }
 
 .portfolioThree {
-    border: 3px purple solid;
+    // border: 3px purple solid;
+    color: $backColorFirst;
     background-color: $offBlack;
 }
 
-main {
-
-    aside,
-    article {
-        // background-color:green;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        object-fit: cover;
-        // height: 100vh;
-    }
-
+.innerColorTwo {
+    border-top: 2px solid $backColorThird;
+    border-bottom: 2px solid $backColorThird;
 }
 
-.projectOnePic,
-.projectSecondPic,
-.projectTThirdPic {
-    font-size: 0;
-    // width: 100%;
-    padding: 10%;
-    object-fit: cover;
-
-    img {
-        width: 100%;
-        height: 30vh;
-        object-fit: cover;
-    }
+.innerColorThree {
+    border-top: 2px solid $backColorThird;
+    border-bottom: 2px solid $backColorThird;
 }
+
+.innerColorThree {
+    border-top: 2px solid $backColorFourth;
+    border-bottom: 2px solid $backColorFourth;
+}
+
 
 .projectOnePic {
-    border: 3px solid black;
-    // background-color: green;
+    width: 90%;
+    // height: 300px;
+    margin: 10% 0 10% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectTwoPic {
+    width: 90%;
+    margin: 10% 0 10% 0;
+    // height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projectThreePic {
+    width: 90%;
+    margin: 10% 0 10% 0;
+    // height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projThreeBox {
+    border: 3px solid $backColorSecond;
+    width: 300px;
+    height: 70px;
+    // border-radius: 20px;
+    flex-shrink: 1;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.projTwoBox {
+    border: 3px solid $backColorSecond;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    flex-shrink: 1;
+    margin: 1% 0 1% 0;
+
+}
+
+.projOneBox {
+    border: 3px solid $backColorSecond;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    flex-shrink: 1;
+}
+
+.projectOneButton {
+    border: 3px solid $backColorThird;
+    border-radius: 20px;
+    width: 150px;
+    // height: 60px;
+    padding: 1%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.projectTwoButton {
+    border: 3px solid $backColorThird;
+    border-radius: 20px;
+    width: 180px;
+    // height: 60px;
+    padding: 1%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.projectThreeButton {
+    border: 3px solid $backColorThird;
+    border-radius: 20px;
+    width: 180px;
+    // height: 60px;
+    margin-bottom: 3%;
+    text-align: center;
 }
 
 .projectSecondPic {
-    border: 3px solid black;
+    // border: 3px solid black;
 }
 
 .projectTThirdPic {
-    border: 3px solid black;
+    // border: 3px solid black;
 }
 
 .aboutMe {
-    background-color: $backColorFifth;
+    background-color: $offBlack;
+    color: $backColorFirst;
+
+    img {
+        border: 3px solid $backColorThird;
+        border-radius: 50%;
+        width: 40%;
+        // height:50%;
+    }
 }

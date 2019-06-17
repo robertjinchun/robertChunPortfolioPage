@@ -7,9 +7,10 @@ $backColorFifth: #fbd1a2;
 $backColorSecond: #e9d758;
 $backColorSixth: #ffc857;
 // $colortertiary: not sure
-$fontPrimary: 'Lato',
+$fontPrimary: 'Rubik',
 sans-serif;
-$fontSecondary: 'Ubuntu',sans-serif;
+$fontSecondary: 'Roboto Mono',
+monospace;
 
 html {
     background-color: $offBlack;
@@ -30,7 +31,7 @@ header,
 .portfolioThree,
 .aboutMe,
 footer {
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
     max-height: 2160px;
     max-width: 3840px;
@@ -48,6 +49,8 @@ h2,
 h3,
 h4 {
     font-family: $fontPrimary;
+    font-weight: 300;
+    margin:0;
 }
 
 h1 {
@@ -66,7 +69,12 @@ h4 {
     font-size: 2rem;
 }
 
-p, li {
-    font-size: 1.3rem;
+p,
+li {
+    font-size: 1rem;
     font-family: $fontSecondary;
+    font-weight: 300;
+}
+i{
+    
 }

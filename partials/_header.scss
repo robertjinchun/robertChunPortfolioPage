@@ -1,53 +1,68 @@
-header {
+header,
+.innerLayerHeader {
     display: flex;
     justify-content: center;
-    padding: 7%;
-    border-top: 10px solid $backColorFirstsolid; // justify-content: space-between;
-}
-
-header {
     flex-direction: column;
-
 }
 
-// .wrapper {
-//     max-width: 3840px;
-// }
+header,
+.innerLayer {}
 
 header {
-    border: 3px solid green;
+    // border: 3px solid green;
     background-color: $offBlack;
     color: $backColorFirst;
-    // width: 100vw;
-    // height: 100vh;
+    align-items: center;
+
+}
+
+.logo {
+    position: fixed;
+    top: 7%;
+    right: 7%;
+}
+
+.logoColor {
+    color: $backColorThird;
 }
 
 .directionalNav {
     position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
+    top: 7%;
+    left: 1%;
 
-    li {
-        margin: 20px 20px;
+    ul {
+        display: flex;
     }
 
-    // justify-content:flex-end;
+    li {
+        margin: 0 20px;
+    }
+}
+
+.innerLayer {
+    width: 90%;
+    height: 90%;
+    // padding: 5%;
+}
+
+.innerColorOne {
+    border-top: 2px solid $backColorThird;
+    border-bottom: 2px solid $backColorThird;
 }
 
 .socialMediaNav {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    // flex-direction: column;
-    align-items: flex-end;
+    left: 0;
+    bottom: 5%;
 
-    li {
-        margin: 10px 20px;
+    ul {
+        display: flex;
     }
 
+    li {
+        margin: 0 60px;
+    }
 }
 
 .hiddenOne {
