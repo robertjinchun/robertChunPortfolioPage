@@ -517,6 +517,10 @@ header {
           align-items: center;
 }
 
+.highlight {
+  color: #e85868;
+}
+
 .portfolioInnerOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,8 +682,49 @@ header {
   width: 80%;
 }
 
-.aboutTitle {
-  margin-left: 5%;
+.projectOneButton {
+  z-index: 1;
+  position: relative;
+  background-color: #0f0a0a;
+  border: 3px solid #e85868;
+  border-radius: 20px;
+  width: 150px;
+  padding: 1%;
+  margin-bottom: 3%;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+.projectOneButton::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #7be5ab;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.45s ease-in-out;
+  transition: -webkit-transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+}
+
+.projectOneButton:hover {
+  cursor: pointer;
+  color: #e85868;
+}
+
+.projectOneButton:hover::before {
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+          transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
 }
 
 footer {
