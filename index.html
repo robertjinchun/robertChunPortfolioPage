@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" rel="stylesheet">
 </head>
@@ -23,16 +25,17 @@
         <div class="innerLayer innerLayerHeader innerColorOne">
             <h1 class="hiddenOne">Robert Chun Portfolio</h1>
             <div class="logo">
-                <h4>
+                <h4 class="direction">
                     &#60;<span class="logoColor">&#47;</span>&#62;
                 </h4>
             </div>
             <nav class="directionalNav">
                 <ul>
-                    <li>Proj One</li>
-                    <li>Proj Two</li>
-                    <li>Proj Three</li>
-                    <li>About Me</li>
+                    <li class="direction">About</li>
+                    <li class="direction">Project One</li>
+                    <li class="direction">Project Two</li>
+                    <li class="direction">Project Three</li>
+                    
                     <!-- <li>Skills/Contact</li> -->
                 </ul>
             </nav>
@@ -46,9 +49,10 @@
 
             <nav class="socialMediaNav">
                 <ul>
-                    <li><i class="fab fa-github fa-lg"></i></li>
-                    <li><i class="fab fa-twitter fa-lg"></i></li>
-                    <li><i class="fab fa-medium fa-lg"></i></li>
+                    <li class="socNav spin circle"><i class="fab fa-github fa-lg"></i></li>
+                    <li class="socNav spin circle"><i class="fab fa-twitter fa-lg"></i></li>
+                    <li class="socNav spin circle"><i class="fab fa-medium fa-lg"></i></li>
+                    <li class="socNav spin circle"><i class="fab fa-linkedin-in fa-lg"></i></li>
                 </ul>
 
             </nav>
@@ -62,6 +66,44 @@
     <!-- Main is split up in to a couple of sections -->
     <!-- About me section, skills and experience, portfolio section -->
     <main>
+        <section class="aboutMe wrapper">
+            <div class="innerLayer innerColorThree portfolioInnerAbout">
+                <aside>
+        
+        
+                </aside>
+                <article>
+                    <div class="picturePerfect">
+                        <div>
+                            <!-- <img src="./assets/headShot.PNG" alt="My name is Robert"> -->
+                        </div>
+        
+                        <h3 class="aboutTitle">About</h3>
+                    </div>
+                    <P>I help build the internet</P>
+                    <p>My past experience is in electromechanical technology automation and robotics</p>
+                    <p>Whether it be software, mechanical, or electrical components, I enjoy breaking, rebuilding and repairing things</p>
+                    <P>My current skillsets are as follows:</P>
+                    <div class="skills">
+                        <div><i class="devicon-html5-plain-wordmark myDevIcon"></i></div>
+                        <div><i class="devicon-css3-plain-wordmark myDevIcon"></i></div>
+                        <div><i class="devicon-sass-original myDevIcon"></i></div>
+                        <div><i class="devicon-javascript-plain myDevIcon"></i></div>
+                    </div>
+                    <div class="skills">
+                        <div><i class="devicon-jquery-plain-wordmark myDevIcon"></i></div>
+                        <div><i class="devicon-react-original-wordmark myDevIcon"></i></div>
+                        <div><i class="devicon-git-plain-wordmark myDevIcon"></i></div>
+                        <div><i class="devicon-visualstudio-plain myDevIcon"></i></div>
+                        
+                    </div>
+                    <!-- <p>Looking for an addition your team?
+                    </p>
+                    <p>Send me an e-mail to <span class="highlight">robertjinchun@outlook.com</span></p> -->
+                </article>
+            </div>
+        
+        </section>
         <section class="portfolioOne">
             <div class="innerLayer innerColorTwo portfolioInnerOne">
                 <aside>
@@ -79,19 +121,36 @@
                         <div class="projOneBox">
                         </div>
                     </div>
-                    <div class="projectOneButton">
-                        <h4>Play?</h4>
-                    </div>
+                    <a href="https://robertjinchun.github.io/robert-chun-project-three/">
+                        <div class="projectOneButton">
+                            <h4>Play?</h4>
+                        </div>
+                    </a>
                 </aside>
-
                 <article>
                     <div>
-                        <!-- title -->
-
-                        <!-- description -->
                         <div class="projectDescription">
                             <p class="highlight">Objectives:</p>
                             <p>Type letters that appear</p>
+                            <p class="highlight">Tools:</p>
+                            <div class="toolsList">
+                                <div>
+                                    <i class="devicon-html5-plain-wordmark myDevIcon"></i>
+                                </div>
+                                <div>
+                                    <i class="devicon-css3-plain-wordmark myDevIcon"></i>
+                                </div>
+                                <div>
+                                    <i class="devicon-sass-original myDevIcon"></i>
+                                </div>
+                                <div>
+                                    <i class="devicon-javascript-plain myDevIcon"></i>
+                                </div>
+                                <div>
+                                    <i class="devicon-jquery-plain-wordmark myDevIcon"></i>
+                                </div>
+                            </div>
+
                             <p class="highlight">Features:</p>
                             <p>Event handlers</p>
                             <p>Spread method</p>
@@ -114,6 +173,18 @@
                         <div class="projectDescription">
                             <p class="highlight">Objective:</p>
                             <p>Garbage? or Blue Bin?</p>
+                            <p class="highlight">Tools:</p>
+                            <div class="toolsList">
+                                <div>
+                                    <i class="devicon-html5-plain-wordmark myDevIcon"></i>
+                                </div>
+                                <div>
+                                    <i class="devicon-css3-plain-wordmark myDevIcon"></i>
+                                </div>
+                                <div>
+                                    <i class="devicon-react-original-wordmark myDevIcon"></i>
+                                </div>
+                            </div>
                             <p class="highlight">Features:</p>
                             <p>City of Toronto Waste Wizard API</p>
                             <p>Event handlers</p>
@@ -172,6 +243,18 @@
                         <div class="projectDescription">
                             <p class="highlight">Objective:</p>
                             <p>Completes your words before you do</p>
+                            <p class="highlight">Tools:</p>
+                            <div class="toolsList">
+                                <div>
+                                    <i class="devicon-html5-plain-wordmark myDevIcon"></i>
+                                </div>
+                                <div>
+                                    <i class="devicon-css3-plain-wordmark myDevIcon"></i>
+                                </div>
+                                <div>
+                                    <i class="devicon-react-original-wordmark myDevIcon"></i>
+                                </div>
+                            </div>
                             <p class="highlight">Features:</p>
                             <p>Data Muse API for suggested outputs to user</p>
                             <p>Utalize regex for error handling</p>
@@ -183,38 +266,7 @@
             </div>
 
         </section>
-        <section class="aboutMe wrapper">
-            <div class="innerLayer innerColorThree portfolioInnerAbout">
-                <aside>
-
-
-                </aside>
-                <article>
-                    <div class="picturePerfect">
-                        <div>
-                            <!-- <img src="./assets/headShot.PNG" alt="My name is Robert"> -->
-                        </div>
-                        
-                        <h3 class="aboutTitle"> About Me </h3>
-                    </div>
-                    <P>I help build the internet</P>
-                    <p>I enjoy asking questions, breaking things, and putting them back together</p>
-                    <p>My past experience is in electromechanical technology automation and robotics</p>
-                    <P>My current skillsets are as follows:</P>
-                    <div class="skills">
-                        <div><i class="fab fa-html5 fa-lg"></i></div>
-                        <div><i class="fab fa-css3-alt fa-lg"></i></div>
-                        <div><i class="fab fa-js fa-lg"></i></div>
-                        <div><i class="fab fa-git fa-lg"></i></div>
-                        <div><i class="fab fa-react fa-lg"></i></div>
-                    </div>
-                    <p>Looking for an addition your team?
-                        </p>
-                        <p>Send me an e-mail to <span>robertjinchun@outlook.com</span></p>
-                </article>
-            </div>
-
-        </section>
+        
 
     </main>
     <!-- Footer contains information about where people can contact me -->

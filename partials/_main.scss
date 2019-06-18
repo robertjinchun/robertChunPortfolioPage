@@ -112,21 +112,6 @@
     background-color: $offBlack;
 }
 
-// .innerColorTwo {
-//     border-top: 2px solid $backColorThird;
-//     border-bottom: 2px solid $backColorThird;
-// }
-
-// .innerColorThree {
-//     border-top: 2px solid $backColorThird;
-//     border-bottom: 2px solid $backColorThird;
-// }
-
-// .innerColorThree {
-//     border-top: 2px solid $backColorFourth;
-//     border-bottom: 2px solid $backColorFourth;
-// }
-
 .projectOnePic {
     width: 90%;
     margin: 10% 0 10% 0;
@@ -184,35 +169,6 @@
     flex-shrink: 1;
 }
 
-.projectOneButton {
-    border: 3px solid $backColorThird;
-    border-radius: 20px;
-    width: 150px;
-    // height: 60px;
-    padding: 1%;
-    margin-bottom: 3%;
-    text-align: center;
-}
-
-.projectTwoButton {
-    border: 3px solid $backColorThird;
-    border-radius: 20px;
-    width: 180px;
-    // height: 60px;
-    padding: 1%;
-    margin-bottom: 3%;
-    text-align: center;
-}
-
-.projectThreeButton {
-    border: 3px solid $backColorThird;
-    border-radius: 20px;
-    width: 180px;
-    // height: 60px;
-    margin-bottom: 3%;
-    text-align: center;
-}
-
 .projectSecondPic {
     // border: 3px solid black;
 }
@@ -235,14 +191,15 @@
 
 .skills {
     display: flex;
+    flex-wrap:wrap;
     // justify-content: center;
 
     div {
-        padding: 0 5% 0 5%;
+        padding: 2% 13% 3% 0;
     }
 
     i {
-        color: $backColorThird;
+        color: $backColorSecond;
         width: 80%;
     }
 }
@@ -253,20 +210,14 @@
 
 //SFX for button
 
-.projectOneButton {
+.projectOneButton,
+.projectTwoButton,
+.projectThreeButton {
     z-index: 1;
     position: relative;
-    // font-size: inherit;
-    // font-family: inherit;
-    // color: white;
-    // padding: 0.5em 1em;
-    // outline: none;
-    // border: none;
     background-color: $offBlack;
     border: 3px solid $backColorThird;
     border-radius: 20px;
-    width: 150px;
-    // height: 60px;
     padding: 1%;
     margin-bottom: 3%;
     text-align: center;
@@ -274,14 +225,16 @@
     transition: color 0.4s ease-in-out;
 }
 
-.projectOneButton::before {
+.projectOneButton::before,
+.projectTwoButton::before,
+.projectThreeButton::before {
     content: '';
     z-index: -1;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 1em;
-    height: 1em;
+    // width: 1em;
+    // height: 1em;
     border-radius: 50%;
     background-color: $backColorFirst;
     transform-origin: center;
@@ -289,11 +242,54 @@
     transition: transform 0.45s ease-in-out;
 }
 
-.projectOneButton:hover {
+.projectOneButton:hover,
+.projectTwoButton:hover,
+.projectThreeButton:hover {
     cursor: pointer;
     color: $backColorThird;
 }
 
-.projectOneButton:hover::before {
+.projectOneButton:hover::before,
+.projectTwoButton:hover::before,
+.projectThreeButton:hover::before {
     transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+.direction {
+    position: relative;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.direction::before,
+.direction::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    // padding:5px;
+    background-color: $backColorThird;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.direction::before {
+    top: 0;
+    transform-origin: center right;
+}
+
+.direction:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+}
+
+.direction::after {
+    bottom: 0;
+    transform-origin: center left;
+}
+
+.direction:hover::after {
+    transform-origin: center right;
+    transform: scaleX(1);
 }

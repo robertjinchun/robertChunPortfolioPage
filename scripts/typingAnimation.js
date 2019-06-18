@@ -1,6 +1,6 @@
 
 $("#typed").typing({
-    strings: ['!!!\u{1F44B}!!!', 'My name is Robert', 'I am a Web Developer!!!', 'I enjoy coding', 'I enjoy climbing', 'I enjoy robots', 'Enjoy!'],
+    strings: ['Hello', 'My name is Robert', 'I am a Web Developer!!!', 'Enjoy my portfolio!'],
     eraseDelay: 50,
     typeDelay: 85,
     stringStartDelay: 1500,

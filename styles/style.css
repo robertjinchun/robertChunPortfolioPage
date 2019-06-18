@@ -282,6 +282,16 @@ li {
   font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.myDevIcon {
+  font-size: 1.8rem;
+  color: #e9d758;
+}
+
 header,
 .innerLayerHeader {
   display: -webkit-box;
@@ -306,7 +316,7 @@ header {
 
 .logo {
   position: fixed;
-  top: 7%;
+  top: 8.2%;
   right: 7%;
 }
 
@@ -372,6 +382,16 @@ header {
 
 .socialMediaNav li {
   margin: 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 .hiddenOne {
@@ -400,6 +420,95 @@ header {
   100% {
     opacity: 1;
   }
+}
+
+.socNav {
+  background: none;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: inset 0 0 0 2px #7be5ab;
+          box-shadow: inset 0 0 0 2px #7be5ab;
+  color: #7be5ab;
+  font-size: inherit;
+  position: relative;
+  vertical-align: middle;
+}
+
+.socNav::before, .socNav::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.spin {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.spin:hover {
+  color: #e85868;
+}
+
+.spin::before, .spin::after {
+  top: 0;
+  left: 0;
+}
+
+.spin::before {
+  border: 2px solid transparent;
+}
+
+.spin:hover::before {
+  border-top-color: #e85868;
+  border-right-color: #e85868;
+  border-bottom-color: #e85868;
+  -webkit-transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+  transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+
+.spin::after {
+  border: 0 solid transparent;
+}
+
+.spin:hover::after {
+  border-top: 2px solid #e85868;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transition: border-left-width 0s linear 0.35s, -webkit-transform 0.4s linear 0s;
+  transition: border-left-width 0s linear 0.35s, -webkit-transform 0.4s linear 0s;
+  transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+  transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s, -webkit-transform 0.4s linear 0s;
+}
+
+.circle {
+  border-radius: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.circle::before, .circle::after {
+  border-radius: 100%;
+}
+
+.socNav {
+  isolation: isolate;
+}
+
+.toolsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.toolsList div {
+  padding: 0 6% 0 0;
 }
 
 .portfolioOne aside {
@@ -631,32 +740,6 @@ header {
       flex-shrink: 1;
 }
 
-.projectOneButton {
-  border: 3px solid #e85868;
-  border-radius: 20px;
-  width: 150px;
-  padding: 1%;
-  margin-bottom: 3%;
-  text-align: center;
-}
-
-.projectTwoButton {
-  border: 3px solid #e85868;
-  border-radius: 20px;
-  width: 180px;
-  padding: 1%;
-  margin-bottom: 3%;
-  text-align: center;
-}
-
-.projectThreeButton {
-  border: 3px solid #e85868;
-  border-radius: 20px;
-  width: 180px;
-  margin-bottom: 3%;
-  text-align: center;
-}
-
 .aboutMe {
   background-color: #0f0a0a;
   color: #7be5ab;
@@ -671,24 +754,27 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .skills div {
-  padding: 0 5% 0 5%;
+  padding: 2% 13% 3% 0;
 }
 
 .skills i {
-  color: #e85868;
+  color: #e9d758;
   width: 80%;
 }
 
-.projectOneButton {
+.projectOneButton,
+.projectTwoButton,
+.projectThreeButton {
   z-index: 1;
   position: relative;
   background-color: #0f0a0a;
   border: 3px solid #e85868;
   border-radius: 20px;
-  width: 150px;
   padding: 1%;
   margin-bottom: 3%;
   text-align: center;
@@ -697,14 +783,14 @@ header {
   transition: color 0.4s ease-in-out;
 }
 
-.projectOneButton::before {
+.projectOneButton::before,
+.projectTwoButton::before,
+.projectThreeButton::before {
   content: '';
   z-index: -1;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 1em;
-  height: 1em;
   border-radius: 50%;
   background-color: #7be5ab;
   -webkit-transform-origin: center;
@@ -717,14 +803,66 @@ header {
   transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
 }
 
-.projectOneButton:hover {
+.projectOneButton:hover,
+.projectTwoButton:hover,
+.projectThreeButton:hover {
   cursor: pointer;
   color: #e85868;
 }
 
-.projectOneButton:hover::before {
+.projectOneButton:hover::before,
+.projectTwoButton:hover::before,
+.projectThreeButton:hover::before {
   -webkit-transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
           transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+.direction {
+  position: relative;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.direction::before,
+.direction::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e85868;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.direction::before {
+  top: 0;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+}
+
+.direction:hover::before {
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.direction::after {
+  bottom: 0;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+
+.direction:hover::after {
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 footer {

@@ -50,7 +50,7 @@ h3,
 h4 {
     font-family: $fontPrimary;
     font-weight: 300;
-    margin:0;
+    margin: 0;
 }
 
 h1 {
@@ -75,6 +75,14 @@ li {
     font-family: $fontSecondary;
     font-weight: 300;
 }
-i{
-    
+
+a {
+    text-decoration: none;
+    color: inherit;
+    // padding:2%;
+}
+
+.myDevIcon {
+    font-size: 1.8rem;
+    color: $backColorSecond;
 }
