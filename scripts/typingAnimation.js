@@ -1,6 +1,6 @@
 
 $("#typed").typing({
-    strings: ['Hello', 'My name is Robert', 'I am a Web Developer!!!', 'Enjoy my portfolio!'],
+    strings: ['Hello :)', 'My name is Robert', 'I am a Web Developer!!!','Enjoy my portfolio!'],
     eraseDelay: 50,
     typeDelay: 85,
     stringStartDelay: 1500,

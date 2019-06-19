@@ -16,7 +16,7 @@
 
 <body>
     <!-- Content will contain the first thing the visitor will see -->
-    <header>
+    <header id="headerOne">
         <div class="overlay">
             <div class="innerLay">
 
@@ -25,17 +25,17 @@
         <div class="innerLayer innerLayerHeader innerColorOne">
             <h1 class="hiddenOne">Robert Chun Portfolio</h1>
             <div class="logo">
-                <h4 class="direction">
-                    &#60;<span class="logoColor">&#47;</span>&#62;
+                <h4 class="direction"><a href="#headerOne"> &#60;<span class="logoColor">&#47;</span>&#62;</a>
+                   
                 </h4>
             </div>
             <nav class="directionalNav">
                 <ul>
-                    <li class="direction">About</li>
-                    <li class="direction">Project One</li>
-                    <li class="direction">Project Two</li>
-                    <li class="direction">Project Three</li>
-                    
+                    <li class="direction"><a href="#aboutMe">About</a></li>
+                    <li class="direction"><a href="#portfolioOne">Project One</a></li>
+                    <li class="direction"><a href="#portfolioTwo">Project Two</a></li>
+                    <li class="direction"><a href="#portfolioThree">Project Three</a></li>
+
                     <!-- <li>Skills/Contact</li> -->
                 </ul>
             </nav>
@@ -49,10 +49,10 @@
 
             <nav class="socialMediaNav">
                 <ul>
-                    <li class="socNav spin circle"><i class="fab fa-github fa-lg"></i></li>
-                    <li class="socNav spin circle"><i class="fab fa-twitter fa-lg"></i></li>
-                    <li class="socNav spin circle"><i class="fab fa-medium fa-lg"></i></li>
-                    <li class="socNav spin circle"><i class="fab fa-linkedin-in fa-lg"></i></li>
+                    <a href="https://github.com/robertjinchun"><li class="socNav spin circle"><i class="fab fa-github fa-lg"></i></li></a>
+                    <a href="https://twitter.com/RobertJinChun"><li class="socNav spin circle"><i class="fab fa-twitter fa-lg"></i></li></a> 
+                    <a href="https://medium.com/@RobertJinChun"><li class="socNav spin circle"><i class="fab fa-medium fa-lg"></i></li></a> 
+                    <a href="https://www.linkedin.com/in/robert-chun-bb7607182/"><li class="socNav spin circle"><i class="fab fa-linkedin-in fa-lg"></i></li></a> 
                 </ul>
 
             </nav>
@@ -66,24 +66,21 @@
     <!-- Main is split up in to a couple of sections -->
     <!-- About me section, skills and experience, portfolio section -->
     <main>
-        <section class="aboutMe wrapper">
+        <section class="aboutMe wrapper" id="aboutMe">
             <div class="innerLayer innerColorThree portfolioInnerAbout">
-                <aside>
-        
-        
-                </aside>
                 <article>
                     <div class="picturePerfect">
                         <div>
                             <!-- <img src="./assets/headShot.PNG" alt="My name is Robert"> -->
                         </div>
-        
+
                         <h3 class="aboutTitle">About</h3>
                     </div>
-                    <P>I help build the internet</P>
-                    <p>My past experience is in electromechanical technology automation and robotics</p>
-                    <p>Whether it be software, mechanical, or electrical components, I enjoy breaking, rebuilding and repairing things</p>
-                    <P>My current skillsets are as follows:</P>
+                    <P>I help build the internet.</P>
+                    <p>My past experience is in electromechanical technology automation and robotics.</p>
+                    <p>Whether it be software, mechanical, or electrical components, I enjoy questioning, breaking, rebuilding and
+                        repairing.</p>
+                    <P>My skillsets are as follows:</P>
                     <div class="skills">
                         <div><i class="devicon-html5-plain-wordmark myDevIcon"></i></div>
                         <div><i class="devicon-css3-plain-wordmark myDevIcon"></i></div>
@@ -95,40 +92,49 @@
                         <div><i class="devicon-react-original-wordmark myDevIcon"></i></div>
                         <div><i class="devicon-git-plain-wordmark myDevIcon"></i></div>
                         <div><i class="devicon-visualstudio-plain myDevIcon"></i></div>
-                        
+                    </div>
+                    <div>
+                        <p>Looking for a team member? You can contact me at <span class="highlight">robertjinchun@outlook.com.</span></p>
                     </div>
                     <!-- <p>Looking for an addition your team?
                     </p>
                     <p>Send me an e-mail to <span class="highlight">robertjinchun@outlook.com</span></p> -->
                 </article>
             </div>
-        
+
         </section>
-        <section class="portfolioOne">
+        <section class="portfolioOne" id="portfolioOne">
             <div class="innerLayer innerColorTwo portfolioInnerOne">
                 <aside>
-                    <div class="projTitle wrapper">
-                        <h4>Type Alot</h4>
+
+                    <div class="portfolioOneOutline">
+                        <div class="projTitle wrapper">
+                            <h4>Type Alot</h4>
+                        </div>
+                        <!-- Type it Picture -->
+                        <div class="projectOnePic">
+                            <div class="projOneBox">
+                            </div>
+                            <div class="projOneBox">
+                            </div>
+                            <div class="projOneBox">
+                            </div>
+                            <div class="projOneBox">
+                            </div>
+                        </div>
+                        <a href="https://robertjinchun.github.io/robert-chun-project-three/">
+                            <div class="projectOneButton">
+                                <h4>Play?</h4>
+                            </div>
+                        </a>
                     </div>
-                    <!-- Type it Picture -->
-                    <div class="projectOnePic">
-                        <div class="projOneBox">
-                        </div>
-                        <div class="projOneBox">
-                        </div>
-                        <div class="projOneBox">
-                        </div>
-                        <div class="projOneBox">
-                        </div>
-                    </div>
-                    <a href="https://robertjinchun.github.io/robert-chun-project-three/">
-                        <div class="projectOneButton">
-                            <h4>Play?</h4>
-                        </div>
-                    </a>
+
                 </aside>
                 <article>
                     <div>
+                        <div class="projectSpacing">
+                            <h3>Project One</h3>
+                        </div>
                         <div class="projectDescription">
                             <p class="highlight">Objectives:</p>
                             <p>Type letters that appear</p>
@@ -163,12 +169,14 @@
 
         </section>
         <!-- skills and experience -->
-        <section class="portfolioTwo">
+        <section class="portfolioTwo" id="portfolioTwo">
             <div class="innerLayer innerColorThree portfolioInnerOne">
                 <article>
                     <div>
                         <!-- title -->
-
+                        <div class="projectSpacing">
+                            <h3>Project Two</h3>
+                        </div>
                         <!-- description -->
                         <div class="projectDescription">
                             <p class="highlight">Objective:</p>
@@ -212,16 +220,19 @@
                         <div class="projTwoBox">
                         </div>
                     </div>
-                    <div class="projectTwoButton">
-                        <h4>Explore!</h4>
-                    </div>
+                    <a href="https://robertjinchun.github.io/robertChunProjectFive/">
+                        <div class="projectTwoButton">
+                            <h4>Explore!</h4>
+                        </div>
+                    </a>
+                    
                 </aside>
 
             </div>
 
         </section>
         <!-- Contains a link to my blog posts as well as portfolio -->
-        <section class="portfolioThree wrapper">
+        <section class="portfolioThree wrapper" id="portfolioThree">
             <div class="innerLayer innerColorThree portfolioInnerOne">
                 <aside>
                     <div class="projTitle">
@@ -231,18 +242,24 @@
                         <div class="projThreeBox">
                         </div>
                     </div>
-                    <div class="projectThreeButton">
-                        <h4>Search!</h4>
-                    </div>
+                    
+                    <a href="https://scrabblegenies.github.io/autocomplete/">
+                        <div class="projectThreeButton">
+                            <h4>Search!</h4>
+                        </div>
+                    </a>
+                    
                 </aside>
                 <article>
                     <div>
                         <!-- title -->
-
+                        <div class="projectSpacing">
+                            <h3>Project Three</h3>
+                        </div>
                         <!-- description -->
                         <div class="projectDescription">
                             <p class="highlight">Objective:</p>
-                            <p>Completes your words before you do</p>
+                            <p>Completes your words before you even finish typing</p>
                             <p class="highlight">Tools:</p>
                             <div class="toolsList">
                                 <div>
@@ -266,10 +283,13 @@
             </div>
 
         </section>
-        
+
 
     </main>
     <!-- Footer contains information about where people can contact me -->
+    <!-- <footer>
+
+    </footer> -->
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"

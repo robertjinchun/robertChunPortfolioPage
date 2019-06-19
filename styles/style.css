@@ -211,6 +211,7 @@ input::-moz-focus-inner {
 }
 
 html {
+  scroll-behavior: smooth;
   background-color: #0f0a0a;
   color: #eaf2ef;
   font-size: 125%;
@@ -285,10 +286,11 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  width: 50%;
 }
 
 .myDevIcon {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #e9d758;
 }
 
@@ -526,9 +528,26 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 5%;
+}
+
+.portfolioOne aside .portfolioOneOutline {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 3px solid #e85868;
   border-radius: 20px;
-  margin: 5%;
 }
 
 .portfolioOne article {
@@ -587,14 +606,13 @@ header {
 }
 
 .aboutMe aside {
-  width: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .aboutMe article {
-  width: 70%;
+  width: 90%;
   margin: 5%;
 }
 
@@ -772,10 +790,9 @@ header {
 .projectThreeButton {
   z-index: 1;
   position: relative;
-  background-color: #0f0a0a;
   border: 3px solid #e85868;
   border-radius: 20px;
-  padding: 1%;
+  padding: 5%;
   margin-bottom: 3%;
   text-align: center;
   overflow: hidden;
@@ -863,6 +880,10 @@ header {
           transform-origin: center right;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.projectSpacing {
+  margin: 0 0 5% 0;
 }
 
 footer {

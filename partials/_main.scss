@@ -4,10 +4,23 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 3px solid $backColorThird;
-    border-radius: 20px;
+    // border: 3px solid $backColorThird;
+    // border-radius: 20px;
     margin: 5%;
+    // padding-bottom:20%;
+
+    .portfolioOneOutline {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 3px solid $backColorThird;
+        border-radius: 20px;
+        
+    }
 }
+
 
 .portfolioOne article {
     width: 40%;
@@ -47,7 +60,7 @@
 }
 
 .aboutMe aside {
-    width: 10%;
+    // width: 10%;
     display: flex;
     // margin-bottom:45%;
     //     justify-content: center;
@@ -59,7 +72,7 @@
 }
 
 .aboutMe article {
-    width: 70%;
+    width: 90%;
     margin: 5%;
 }
 
@@ -191,7 +204,7 @@
 
 .skills {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     // justify-content: center;
 
     div {
@@ -215,10 +228,11 @@
 .projectThreeButton {
     z-index: 1;
     position: relative;
-    background-color: $offBlack;
+    // background-color: $offBlack;
     border: 3px solid $backColorThird;
     border-radius: 20px;
-    padding: 1%;
+    // width:100%;
+    padding: 5%;
     margin-bottom: 3%;
     text-align: center;
     overflow: hidden;
@@ -292,4 +306,8 @@
 .direction:hover::after {
     transform-origin: center right;
     transform: scaleX(1);
+}
+
+.projectSpacing{
+    margin:0 0 5% 0;
 }

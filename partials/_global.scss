@@ -13,6 +13,7 @@ $fontSecondary: 'Roboto Mono',
 monospace;
 
 html {
+    scroll-behavior: smooth;
     background-color: $offBlack;
     color: $offWhite;
     font-size: 125%;
@@ -79,10 +80,11 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+    width:50%;
     // padding:2%;
 }
 
 .myDevIcon {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: $backColorSecond;
 }
