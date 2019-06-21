@@ -17,7 +17,7 @@
         flex-direction: column;
         border: 3px solid $backColorThird;
         border-radius: 20px;
-        
+
     }
 }
 
@@ -96,6 +96,18 @@
 }
 
 .portfolioInnerOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioInnerTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioInnerThree {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,6 +320,6 @@
     transform: scaleX(1);
 }
 
-.projectSpacing{
-    margin:0 0 5% 0;
+.projectSpacing {
+    margin: 0 0 5% 0;
 }

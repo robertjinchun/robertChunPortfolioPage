@@ -13,21 +13,21 @@ $("#typed").typing({
     cursorChar: '<small>_</small>',
     fade: false,
     onTyping: function () {
-        console.log('onTyping');
+        // console.log('onTyping');
     },
     onFinishedTyping: function () {
-        console.log('onFinishedTyping');
+        // console.log('onFinishedTyping');
     },
     onErasing: function () {
-        console.log('onErasing');
+        // console.log('onErasing');
     },
     onFinishedErasing: function () {
-        console.log('onFinishedErasing');
+        // console.log('onFinishedErasing');
     },
     onAllTypingCompleted: function () {
-        console.log('onAllTypingCompleted');
+        // console.log('onAllTypingCompleted');
     },
     onFinishedFadeErasing: function () {
-        console.log('onFinishedFadeErasing');
+        // console.log('onFinishedFadeErasing');
     }
 });

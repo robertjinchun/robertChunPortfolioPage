@@ -1,0 +1,174 @@
+@media (max-width:1100px) {
+    .innerLayer {
+        width: 97%;
+        height: 95%;
+    }
+
+    .innerLay {
+        height: 95%;
+    }
+
+    .portfolioOne aside {
+        margin: 1%;
+        width: 40%;
+    }
+
+
+    .portfolioOne article {
+        margin: 1%;
+        width: 50%;
+    }
+
+    .portfolioTwo aside {
+        margin: 1%;
+        width: 40%;
+    }
+
+    .portfolioTwo article {
+        margin: 1%;
+        width: 50%;
+    }
+
+    .portfolioThree aside {
+        width: 40%;
+        margin: 1%;
+    }
+
+    .portfolioThree article {
+        width: 50%;
+        margin: 1%;
+    }
+
+    .directionalNav {
+        top: 0%;
+    }
+
+    .socialMediaNav {
+        bottom: 0%;
+    }
+
+}
+
+@media (max-width:870px) {
+
+    header {
+        height: 100vh;
+    }
+
+    .portfolioOne,
+    .portfolioTwo,
+    .portfolioThree,
+    .aboutMe,
+    footer {
+        width: 95vw;
+        height: auto;
+        max-height: 1000px;
+        max-width: 1600px;
+        // 568
+        min-height: 568px;
+        min-width: 320px;
+        margin: 15% 0 15% 0;
+    }
+
+    .portfolioInnerOne {
+        flex-direction: column-reverse;
+    }
+
+    .portfolioInnerTwo {
+        flex-direction: column;
+    }
+
+    .portfolioInnerThree {
+        flex-direction: column-reverse;
+    }
+
+    .portfolioOne aside {
+        margin: 1%;
+        width: 98%;
+    }
+
+
+    .portfolioOne article {
+        margin: 1%;
+        width: 98%;
+    }
+
+    .portfolioTwo aside {
+        margin: 1%;
+        width: 98%;
+    }
+
+    .portfolioTwo article {
+        margin: 1%;
+        width: 98%;
+    }
+
+    .portfolioThree aside {
+        width: 98%;
+        margin: 1%;
+        // padding-bottom:30%;
+    }
+
+    .portfolioThree article {
+        width: 98%;
+        margin: 1%;
+    }
+
+    .directionalNav {
+        position: absolute;
+        width: 100%;
+
+        a {
+            width: auto;
+        }
+
+        ul {
+            justify-content: space-between;
+            width: 100%;
+            padding-right: 40px;
+        }
+
+        li {
+            margin: 0;
+        }
+    }
+
+    .socialMediaNav {
+        position: absolute;
+        // display:flex;
+        // justify-content:space-between;
+        width: 100%;
+
+        a {
+            width: auto;
+        }
+
+        ul {
+            justify-content: space-between;
+            width: 100%;
+            padding-right: 40px;
+        }
+
+        li {
+            margin: 0;
+        }
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .myDevIcon {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .innerLay {
+
+        border-top: none;
+        border-bottom: none;
+    }
+}

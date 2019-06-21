@@ -28,11 +28,15 @@ header {
 
 .directionalNav {
     position: fixed;
-    top: 7%;
-    left: 1%;
-
+    padding-left: 2%;
+    top: 3%;
+    left: 0;
+    z-index:5;
+    // background-color: rgba(15, 10, 10, 0.7);
     ul {
         display: flex;
+        align-items: center;
+        
     }
 
     li {
@@ -41,6 +45,7 @@ header {
 }
 
 .innerLayer {
+    position: relative;
     width: 90%;
     height: 90%;
     // padding: 5%;
@@ -63,7 +68,8 @@ header {
 
 .innerLay {
     position: fixed;
-    width: 90%;
+    width: 95%;
+    padding:1%;
     height: 90%;
     border-top: 2px solid $backColorThird;
     border-bottom: 2px solid $backColorThird;
@@ -72,7 +78,8 @@ header {
 .socialMediaNav {
     position: fixed;
     left: 0;
-    bottom: 5%;
+    bottom: 3%;
+    z-index:5;
 
     ul {
         display: flex;
@@ -237,8 +244,14 @@ body {
     // justify-content:center;
 
     div {
-        padding:0 6% 0 0;
+        padding: 0 6% 0 0;
         // width:100px;
         // height:100px;
     }
+}
+
+////////////////////////////////////
+///////////////////////////////////// SHAME
+.typingAnimation{
+    padding-left:5%;
 }
