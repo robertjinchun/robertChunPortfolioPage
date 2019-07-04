@@ -31,12 +31,13 @@ header {
     padding-left: 2%;
     top: 3%;
     left: 0;
-    z-index:5;
+    z-index: 5;
+
     // background-color: rgba(15, 10, 10, 0.7);
     ul {
         display: flex;
         align-items: center;
-        
+
     }
 
     li {
@@ -69,7 +70,7 @@ header {
 .innerLay {
     position: fixed;
     width: 95%;
-    padding:1%;
+    padding: 1%;
     height: 90%;
     border-top: 2px solid $backColorThird;
     border-bottom: 2px solid $backColorThird;
@@ -79,7 +80,7 @@ header {
     position: fixed;
     left: 0;
     bottom: 3%;
-    z-index:5;
+    z-index: 5;
 
     ul {
         display: flex;
@@ -115,8 +116,8 @@ header {
     }
 }
 
-//SFX
 
+//credit to https://cssfx.dev/ for these wonderful css animations
 //Colors
 $background: #fefefe;
 $text: #4b507a;
@@ -252,6 +253,6 @@ body {
 
 ////////////////////////////////////
 ///////////////////////////////////// SHAME
-.typingAnimation{
-    padding-left:5%;
+.typingAnimation {
+    padding-left: 5%;
 }

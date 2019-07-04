@@ -1,4 +1,4 @@
-
+//Credits to the individual who made this... I need to find her to give credit
 $("#typed").typing({
     strings: ['Hello :)', 'My name is Robert', 'I am a Web Developer!!!','Enjoy my portfolio!'],
     eraseDelay: 50,
