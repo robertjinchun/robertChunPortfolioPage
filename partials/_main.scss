@@ -24,7 +24,7 @@
 
 .portfolioOne article {
     width: 40%;
-    margin: 5%;
+    margin: 0 5%;
 }
 
 .portfolioTwo aside {
@@ -40,7 +40,7 @@
 
 .portfolioTwo article {
     width: 40%;
-    margin: 5%;
+    margin: 0 5%;
 }
 
 .portfolioThree aside {
@@ -51,12 +51,12 @@
     flex-direction: column;
     border: 3px solid $backColorThird;
     border-radius: 20px;
-    margin: 5%;
+    margin: 0 5%;
 }
 
 .portfolioThree article {
     width: 40%;
-    margin: 5%;
+    margin: 0 5%;
 }
 
 .aboutMe aside {
@@ -97,30 +97,6 @@
 
 .highlight {
     color: $backColorThird;
-}
-
-.portfolioInnerOne {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portfolioInnerTwo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portfolioInnerThree {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portfolioInnerAbout {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
 }
 
 .portfolioOne {

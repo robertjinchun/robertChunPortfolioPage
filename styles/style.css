@@ -218,6 +218,7 @@ html, body {
 }
 
 body {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,14 +237,17 @@ body {
 header {
   width: 95vw;
   height: 100vh;
-  max-height: 1200px;
-  max-width: 1600px;
+  max-width: 3840px;
   min-height: 568px;
   min-width: 320px;
 }
 
 li {
   list-style: none;
+}
+
+ul {
+  padding-left: 0;
 }
 
 h1,
@@ -360,7 +364,7 @@ header {
 }
 
 .socialMediaNav li {
-  margin: 0 60px;
+  margin: 0 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,7 +529,7 @@ header {
 
 .portfolioOne article {
   width: 40%;
-  margin: 5%;
+  margin: 0 5%;
 }
 
 .portfolioTwo aside {
@@ -550,7 +554,7 @@ header {
 
 .portfolioTwo article {
   width: 40%;
-  margin: 5%;
+  margin: 0 5%;
 }
 
 .portfolioThree aside {
@@ -570,12 +574,12 @@ header {
           flex-direction: column;
   border: 3px solid #e85868;
   border-radius: 20px;
-  margin: 5%;
+  margin: 0 5%;
 }
 
 .portfolioThree article {
   width: 40%;
-  margin: 5%;
+  margin: 0 5%;
 }
 
 .aboutMe aside {
@@ -614,42 +618,6 @@ header {
 
 .highlight {
   color: #e85868;
-}
-
-.portfolioInnerOne {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.portfolioInnerTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.portfolioInnerThree {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .portfolioOne {
@@ -863,5 +831,124 @@ header {
 
 footer {
   background-color: #ffc857;
+}
+
+@media (max-width: 1100px) {
+  .portfolioOne aside {
+    margin: 1%;
+    width: 40%;
+  }
+  .portfolioOne article {
+    margin: 1%;
+    width: 50%;
+  }
+  .portfolioTwo aside {
+    margin: 1%;
+    width: 40%;
+  }
+  .portfolioTwo article {
+    margin: 1%;
+    width: 50%;
+  }
+  .portfolioThree aside {
+    width: 40%;
+    margin: 1%;
+  }
+  .portfolioThree article {
+    width: 50%;
+    margin: 1%;
+  }
+}
+
+@media (max-width: 870px) {
+  header {
+    height: auto;
+    min-height: 800px;
+    min-width: 320px;
+  }
+  .portfolioInnerOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .portfolioInnerTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolioInnerThree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .portfolioOne aside {
+    margin: 1%;
+    width: 98%;
+  }
+  .portfolioOne article {
+    margin: 1%;
+    width: 98%;
+  }
+  .portfolioTwo aside {
+    margin: 1%;
+    width: 98%;
+  }
+  .portfolioTwo article {
+    margin: 1%;
+    width: 98%;
+  }
+  .portfolioThree aside {
+    width: 98%;
+    margin: 1%;
+  }
+  .portfolioThree article {
+    width: 98%;
+    margin: 1%;
+  }
+  .directionalNav a {
+    width: auto;
+  }
+  .directionalNav ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .directionalNav li {
+    margin: 0;
+  }
+  .socialMediaNav {
+    width: 100%;
+  }
+  .socialMediaNav a {
+    width: auto;
+  }
+  .socialMediaNav ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .socialMediaNav li {
+    margin: 0;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .myDevIcon {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-height: 500px) {
+  .innerlayer, header {
+    min-height: 400px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
