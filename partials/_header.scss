@@ -5,21 +5,10 @@ header,
     flex-direction: column;
 }
 
-header,
-.innerLayer {}
-
 header {
-    // border: 3px solid green;
     background-color: $offBlack;
     color: $backColorFirst;
     align-items: center;
-
-}
-
-.logo {
-    position: fixed;
-    top: 8.2%;
-    right: 7%;
 }
 
 .logoColor {
@@ -27,74 +16,36 @@ header {
 }
 
 .directionalNav {
-    position: fixed;
-    padding-left: 2%;
-    top: 3%;
-    left: 0;
-    z-index: 5;
-
-    // background-color: rgba(15, 10, 10, 0.7);
+    border-top: 2px solid $backColorThird;
     ul {
         display: flex;
         align-items: center;
-
     }
-
     li {
         margin: 0 20px;
     }
 }
 
 .innerLayer {
-    position: relative;
-    width: 90%;
-    height: 90%;
-    // padding: 5%;
-}
-
-.innerColorOne {
-    // border-top: 2px solid $backColorThird;
-    // border-bottom: 2px solid $backColorThird;
-    // position:fixed;
-}
-
-.overlay {
-    position: fixed;
-    width: 95vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.innerLay {
-    position: fixed;
-    width: 95%;
-    padding: 1%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
     height: 90%;
-    border-top: 2px solid $backColorThird;
-    border-bottom: 2px solid $backColorThird;
 }
 
 .socialMediaNav {
-    position: fixed;
-    left: 0;
-    bottom: 3%;
-    z-index: 5;
-
+    border-bottom: 2px solid $backColorThird;
     ul {
         display: flex;
     }
-
     li {
         margin: 0 60px;
-
-
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-
     }
 }
 
@@ -116,39 +67,17 @@ header {
     }
 }
 
-
 //credit to https://cssfx.dev/ for these wonderful css animations
-//Colors
-$background: #fefefe;
-$text: #4b507a;
-
-// $cyan: #60daaa;
-$yellow: #fbca67;
-$orange: #ff8a30;
-$red: #f45e61;
-$purple: #6477b9;
-$blue: #0eb7da;
-
-
 
 .socNav {
     background: none;
     border: 0;
     box-sizing: border-box;
-    // margin: 1em;
-    // padding: 1em 2em;
-
-    // Using inset box-shadow instead of border for sizing simplicity
     box-shadow: inset 0 0 0 2px $backColorFirst;
     color: $backColorFirst;
     font-size: inherit;
-    // font-weight: 700;
-
-    // Required, since we're setting absolute on pseudo-elements
     position: relative;
     vertical-align: middle;
-
-
 
     &::before,
     &::after {
@@ -215,44 +144,10 @@ $blue: #0eb7da;
     }
 }
 
-body {
-    // background: $background;
-    // color: $text;
-    // font: 300 24px/1.5 Lato, sans-serif;
-    // margin: 1em auto;
-    // max-width: 36em;
-    // padding: 1em 1em 2em;
-    // text-align: center;
-}
-
-.socNav {
-    isolation: isolate;
-}
-
-// h1 {
-//     font-weight: 300;
-//     font-size: 2.5em;
-// }
-
-
-
-
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////@at-root
-
 .toolsList {
     display: flex;
-    // justify-content:center;
 
     div {
         padding: 0 6% 0 0;
-        // width:100px;
-        // height:100px;
     }
-}
-
-////////////////////////////////////
-///////////////////////////////////// SHAME
-.typingAnimation {
-    padding-left: 5%;
 }

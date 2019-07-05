@@ -16,71 +16,41 @@
 
 <body>
     <!-- Content will contain the first thing the visitor will see -->
-    <header id="headerOne">
-        <div class="overlay">
-            <div class="innerLay">
-
-            </div>
-        </div>
-        <div class="innerLayer innerLayerHeader innerColorOne">
+    <header>
+        <div class="innerLayer">
             <h1 class="hiddenOne">Robert Chun Portfolio</h1>
-            <!-- <div class="logo">
-                <h4 class="direction"><a href="#headerOne"> &#60;<span class="logoColor">&#47;</span>&#62;</a>
-                   
-                </h4>
-            </div> -->
+
             <nav class="directionalNav">
                 <ul>
-                    <li><h4 class="direction"><a href="#headerOne"> &#60;<span class="logoColor">&#47;</span>&#62;</a></li>
-                    <li class="direction"><a id ="aboutNav" href="#aboutMe">About</a></li>
-                    <li  class="direction"><a id ="projectOneNav" href="#portfolioOne">Project One</a></li>
-                    <li  class="direction"><a id ="projectTwoNav" href="#portfolioTwo">Project Two</a></li>
-                    <li  class="direction"><a id ="projectThreeNav" href="#portfolioThree">Project Three</a></li>
-
-                    <!-- <li>Skills/Contact</li> -->
+                    <li>
+                        <h4 class="direction"><a href="#headerOne" id="logo"> &#60;<span
+                                    class="logoColor">&#47;</span>&#62;</a>
+                    </li>
+                    <li class="direction"><a id="aboutNav" href="#aboutMe">About</a></li>
+                    <li class="direction"><a id="projectOneNav" href="#portfolioOne">Project One</a></li>
+                    <li class="direction"><a id="projectTwoNav" href="#portfolioTwo">Project Two</a></li>
+                    <li class="direction"><a id="projectThreeNav" href="#portfolioThree">Project Three</a></li>
                 </ul>
             </nav>
-            
+
             <!-- This h2 is for text disappearing and reappearing -->
-            <div class="typingAnimation">
+            <section class="typingAnimation" id="typingAnimation">
                 <!-- <h4>To those who are curious</h4> -->
                 <h2>
                     <span id="typed"></span><span class="cursor"></span>
                 </h2>
-            </div>
+            </section>
 
-            <nav class="socialMediaNav">
-                <ul>
-                    <a href="https://github.com/robertjinchun" target="_blank"><li class="socNav spin circle"><i class="fab fa-github fa-lg"></i></li></a>
-                    <a href="https://twitter.com/RobertJinChun" target="_blank"><li class="socNav spin circle"><i class="fab fa-twitter fa-lg"></i></li></a> 
-                    <a href="https://medium.com/@RobertJinChun" target="_blank"><li class="socNav spin circle"><i class="fab fa-medium fa-lg"></i></li></a> 
-                    <a href="https://www.linkedin.com/in/robert-chun-bb7607182/" target="_blank"><li class="socNav spin circle"><i class="fab fa-linkedin-in fa-lg"></i></li></a> 
-                </ul>
-
-            </nav>
-            <!-- Hey! My name is Robert Chun-->
-            <!-- I am a front end Developer -->
-            <!-- I am an avid climber -->
-            <!-- There is probably more -->
-        </div>
-
-    </header>
-    <!-- Main is split up in to a couple of sections -->
-    <!-- About me section, skills and experience, portfolio section -->
-    <main>
-        <section class="aboutMe wrapper" id="aboutMe">
-            <div class="innerLayer innerColorThree portfolioInnerAbout">
+            <section class="aboutMe displayStatus" id="aboutMe">
+                <!-- <div class="innerLayer innerColorThree portfolioInnerAbout"> -->
                 <article>
-                    <div class="picturePerfect">
-                        <div>
-                            <!-- <img src="./assets/headShot.PNG" alt="My name is Robert"> -->
-                        </div>
+                    <h3 class="aboutTitle">About</h3>
 
-                        <h3 class="aboutTitle">About</h3>
-                    </div>
                     <P>I help build the internet.</P>
                     <p>My past experience is in electromechanical technology automation and robotics.</p>
-                    <p>Whether it be software, mechanical, or electrical components, I enjoy questioning, breaking, rebuilding and
+                    <p>Whether it be software, mechanical, or electrical components, I enjoy questioning, breaking,
+                        rebuilding
+                        and
                         repairing.</p>
                     <P>My skillsets are as follows:</P>
                     <div class="skills">
@@ -96,196 +66,225 @@
                         <div><i class="devicon-visualstudio-plain myDevIcon"></i></div>
                     </div>
                     <div>
-                        <p>Looking for a team member? You can contact me at <span class="highlight">robertjinchun@outlook.com.</span></p>
+                        <p>Looking for a team member? You can contact me at <span
+                                class="highlight">robertjinchun@outlook.com.</span></p>
                     </div>
-                    <!-- <p>Looking for an addition your team?
-                    </p>
-                    <p>Send me an e-mail to <span class="highlight">robertjinchun@outlook.com</span></p> -->
+
                 </article>
-            </div>
+                <!-- </div> -->
 
-        </section>
-        <section class="portfolioOne" id="portfolioOne">
-            <div class="innerLayer innerColorTwo portfolioInnerOne">
-                <aside>
-
-                    <div class="portfolioOneOutline">
-                        <div class="projTitle wrapper">
-                            <h4>Type Alot</h4>
+            </section>
+            
+            <section class="portfolioOne displayStatus" id="portfolioOne">
+                <!-- <div class="innerLayer innerColorTwo portfolioInnerOne"> -->
+                    <aside>
+            
+                        <div class="portfolioOneOutline">
+                            <div class="projTitle wrapper">
+                                <h4>Type Alot</h4>
+                            </div>
+                           
+                            <div class="projectOnePic">
+                                <div class="projOneBox">
+                                </div>
+                                <div class="projOneBox">
+                                </div>
+                                <div class="projOneBox">
+                                </div>
+                                <div class="projOneBox">
+                                </div>
+                            </div>
+                            <a href="https://robertjinchun.github.io/robert-chun-project-three/" target="_blank">
+                                <div class="projectOneButton">
+                                    <h4>Play?</h4>
+                                </div>
+                            </a>
                         </div>
-                        <!-- Type it Picture -->
-                        <div class="projectOnePic">
-                            <div class="projOneBox">
+            
+                    </aside>
+                    <article>
+                        <div>
+                            <div class="projectSpacing">
+                                <h3>Project One</h3>
                             </div>
-                            <div class="projOneBox">
+                            <div class="projectDescription">
+                                <p class="highlight">Objectives:</p>
+                                <p>Type the letters that appear</p>
+                                <p class="highlight">Tools:</p>
+                                <div class="toolsList">
+                                    <div>
+                                        <i class="devicon-html5-plain-wordmark myDevIcon"></i>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-css3-plain-wordmark myDevIcon"></i>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-sass-original myDevIcon"></i>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-javascript-plain myDevIcon"></i>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-jquery-plain-wordmark myDevIcon"></i>
+                                    </div>
+                                </div>
+            
+                                <p class="highlight">Features:</p>
+                                <p>Name Spacing</p>
+                                <p>Spread method</p>
+                                <p>String Manipulation<p>
+                                        <p>Real time scoring and timer</p>
                             </div>
-                            <div class="projOneBox">
+                    </article>
+                <!-- </div> -->
+            
+            </section>
+           
+            <section class="portfolioTwo displayStatus" id="portfolioTwo">
+                <!-- <div class="innerLayer innerColorThree portfolioInnerTwo"> -->
+                    <article>
+                        <div>
+                          
+                            <div class="projectSpacing">
+                                <h3>Project Two</h3>
                             </div>
-                            <div class="projOneBox">
+                           
+                            <div class="projectDescription">
+                                <p class="highlight">Objective:</p>
+                                <p>Got trash? Check if it’s garbage or blue bin.</p>
+                                <p class="highlight">Tools:</p>
+                                <div class="toolsList">
+                                    <div>
+                                        <i class="devicon-html5-plain-wordmark myDevIcon"></i>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-css3-plain-wordmark myDevIcon"></i>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-react-original-wordmark myDevIcon"></i>
+                                    </div>
+                                </div>
+                                <p class="highlight">Features:</p>
+                                <p>City of Toronto Waste Wizard API</p>
+                                <p>Array and object manipulation</p>
+                                <p>Separate features using components</p>
+                                <p>Use regex to filter to API</p>
                             </div>
                         </div>
-                        <a href="https://robertjinchun.github.io/robert-chun-project-three/" target="_blank">
-                            <div class="projectOneButton">
-                                <h4>Play?</h4>
+                    </article>
+                    <aside>
+                        <div class="projTitle">
+                            <h4>Recycle T.O</h4>
+                        </div>
+                      
+                        <div class="projectTwoPic">
+                            <div class="projTwoBox">
+                            </div>
+                            <div class="projTwoBox">
+                            </div>
+                            <div class="projTwoBox">
+                            </div>
+                            <div class="projTwoBox">
+                            </div>
+                            <div class="projTwoBox">
+                            </div>
+                            <div class="projTwoBox">
+                            </div>
+                        </div>
+                        <a href="https://robertjinchun.github.io/robertChunProjectFive/" target="_blank">
+                            <div class="projectTwoButton">
+                                <h4>Explore!</h4>
                             </div>
                         </a>
-                    </div>
-
-                </aside>
-                <article>
-                    <div>
-                        <div class="projectSpacing">
-                            <h3>Project One</h3>
+            
+                    </aside>
+            
+                <!-- </div> -->
+            
+            </section>
+           
+            <section class="portfolioThree displayStatus" id="portfolioThree">
+                <!-- <div class="innerLayer innerColorThree portfolioInnerThree"> -->
+                    <aside>
+                        <div class="projTitle">
+                            <h4>Autocomplete</h4>
                         </div>
-                        <div class="projectDescription">
-                            <p class="highlight">Objectives:</p>
-                            <p>Type the letters that appear</p>
-                            <p class="highlight">Tools:</p>
-                            <div class="toolsList">
-                                <div>
-                                    <i class="devicon-html5-plain-wordmark myDevIcon"></i>
-                                </div>
-                                <div>
-                                    <i class="devicon-css3-plain-wordmark myDevIcon"></i>
-                                </div>
-                                <div>
-                                    <i class="devicon-sass-original myDevIcon"></i>
-                                </div>
-                                <div>
-                                    <i class="devicon-javascript-plain myDevIcon"></i>
-                                </div>
-                                <div>
-                                    <i class="devicon-jquery-plain-wordmark myDevIcon"></i>
-                                </div>
+                        <div class="projectThreePic">
+                            <div class="projThreeBox">
                             </div>
-
-                            <p class="highlight">Features:</p>
-                            <p>Name Spacing</p>
-                            <p>Spread method</p>
-                            <p>String Manipulation<p>
-                            <p>Real time scoring and timer</p>
                         </div>
-                </article>
-            </div>
-
-        </section>
-        <!-- skills and experience -->
-        <section class="portfolioTwo" id="portfolioTwo">
-            <div class="innerLayer innerColorThree portfolioInnerTwo">
-                <article>
-                    <div>
-                        <!-- title -->
-                        <div class="projectSpacing">
-                            <h3>Project Two</h3>
-                        </div>
-                        <!-- description -->
-                        <div class="projectDescription">
-                            <p class="highlight">Objective:</p>
-                            <p>Got trash? Check if it’s garbage or blue bin.</p>
-                            <p class="highlight">Tools:</p>
-                            <div class="toolsList">
-                                <div>
-                                    <i class="devicon-html5-plain-wordmark myDevIcon"></i>
-                                </div>
-                                <div>
-                                    <i class="devicon-css3-plain-wordmark myDevIcon"></i>
-                                </div>
-                                <div>
-                                    <i class="devicon-react-original-wordmark myDevIcon"></i>
-                                </div>
+            
+                        <a href="https://scrabblegenies.github.io/autocomplete/" target="_blank">
+                            <div class="projectThreeButton">
+                                <h4>Search!</h4>
                             </div>
-                            <p class="highlight">Features:</p>
-                            <p>City of Toronto Waste Wizard API</p>
-                            <p>Array and object manipulation</p>
-                            <p>Separate features using components</p>
-                            <p>Use regex to filter to API</p>
+                        </a>
+            
+                    </aside>
+                    <article>
+                        <div>
+                          
+                            <div class="projectSpacing">
+                                <h3>Project Three</h3>
+                            </div>
+                            
+                            <div class="projectDescription">
+                                <p class="highlight">Objective:</p>
+                                <p>Completes your words before you even finish typing</p>
+                                <p class="highlight">Tools:</p>
+                                <div class="toolsList">
+                                    <div>
+                                        <i class="devicon-html5-plain-wordmark myDevIcon"></i>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-css3-plain-wordmark myDevIcon"></i>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-react-original-wordmark myDevIcon"></i>
+                                    </div>
+                                </div>
+                                <p class="highlight">Features:</p>
+                                <p>Data Muse API for suggested outputs to user</p>
+                                <p>Asynchronous Axios</p>
+                                <p>Utalize regex for error handling</p>
+                                <p>Collaborated with a group of four to complete project</p>
+            
+                            </div>
+            
                         </div>
-                    </div>
-                </article>
-                <aside>
-                    <div class="projTitle">
-                        <h4>Recycle T.O</h4>
-                    </div>
-                    <!-- Type it Picture -->
-                    <div class="projectTwoPic">
-                        <div class="projTwoBox">
-                        </div>
-                        <div class="projTwoBox">
-                        </div>
-                        <div class="projTwoBox">
-                        </div>
-                        <div class="projTwoBox">
-                        </div>
-                        <div class="projTwoBox">
-                        </div>
-                        <div class="projTwoBox">
-                        </div>
-                    </div>
-                    <a href="https://robertjinchun.github.io/robertChunProjectFive/" target="_blank">
-                        <div class="projectTwoButton">
-                            <h4>Explore!</h4>
-                        </div>
+                    </article>
+                <!-- </div> -->
+            
+            </section>
+
+            <nav class="socialMediaNav">
+                <ul>
+                    <a href="https://github.com/robertjinchun" target="_blank">
+                        <li class="socNav spin circle"><i class="fab fa-github fa-lg"></i></li>
                     </a>
-                    
-                </aside>
-
-            </div>
-
-        </section>
-        <!-- Contains a link to my blog posts as well as portfolio -->
-        <section class="portfolioThree wrapper" id="portfolioThree">
-            <div class="innerLayer innerColorThree portfolioInnerThree">
-                <aside>
-                    <div class="projTitle">
-                        <h4>Autocomplete</h4>
-                    </div>
-                    <div class="projectThreePic">
-                        <div class="projThreeBox">
-                        </div>
-                    </div>
-                    
-                    <a href="https://scrabblegenies.github.io/autocomplete/" target="_blank">
-                        <div class="projectThreeButton">
-                            <h4>Search!</h4>
-                        </div>
+                    <a href="https://twitter.com/RobertJinChun" target="_blank">
+                        <li class="socNav spin circle"><i class="fab fa-twitter fa-lg"></i></li>
                     </a>
-                    
-                </aside>
-                <article>
-                    <div>
-                        <!-- title -->
-                        <div class="projectSpacing">
-                            <h3>Project Three</h3>
-                        </div>
-                        <!-- description -->
-                        <div class="projectDescription">
-                            <p class="highlight">Objective:</p>
-                            <p>Completes your words before you even finish typing</p>
-                            <p class="highlight">Tools:</p>
-                            <div class="toolsList">
-                                <div>
-                                    <i class="devicon-html5-plain-wordmark myDevIcon"></i>
-                                </div>
-                                <div>
-                                    <i class="devicon-css3-plain-wordmark myDevIcon"></i>
-                                </div>
-                                <div>
-                                    <i class="devicon-react-original-wordmark myDevIcon"></i>
-                                </div>
-                            </div>
-                            <p class="highlight">Features:</p>
-                            <p>Data Muse API for suggested outputs to user</p>
-                            <p>Asynchronous Axios</p>
-                            <p>Utalize regex for error handling</p>
-                            <p>Collaborated with a group of four to complete project</p>
+                    <a href="https://medium.com/@RobertJinChun" target="_blank">
+                        <li class="socNav spin circle"><i class="fab fa-medium fa-lg"></i></li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/robert-chun-bb7607182/" target="_blank">
+                        <li class="socNav spin circle"><i class="fab fa-linkedin-in fa-lg"></i></li>
+                    </a>
+                </ul>
 
-                        </div>
+            </nav>
+            <!-- Hey! My name is Robert Chun-->
+            <!-- I am a front end Developer -->
+            <!-- I am an avid climber -->
+            <!-- There is probably more -->
+        </div>
 
-                    </div>
-                </article>
-            </div>
+    </header>
+    <!-- Main is split up in to a couple of sections -->
+    <!-- About me section, skills and experience, portfolio section -->
+    <main>
 
-        </section>
 
 
     </main>
@@ -300,7 +299,9 @@
     </script>
 <script src="https://rawgit.com/Jeya-Prakash/Typing-Effects-JQuery-Plugin/master/typingEffect.js"></script>
 <script src="./scripts/typingAnimation.js"></script>
-<script src="./scripts/hamburger.js"></script>
+<script src="./scripts/shortenNav.js"></script>
+<script src="scripts/appearReappear.js"></script>
+
 <!-- <script src="./scripts/typed.js"></script> -->
 
 </html>

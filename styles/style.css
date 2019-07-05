@@ -210,7 +210,7 @@ input::-moz-focus-inner {
   overflow: hidden;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
   background-color: #0f0a0a;
   color: #eaf2ef;
@@ -233,12 +233,7 @@ body {
           align-items: center;
 }
 
-header,
-.portfolioOne,
-.portfolioTwo,
-.portfolioThree,
-.aboutMe,
-footer {
+header {
   width: 95vw;
   height: 100vh;
   max-height: 1200px;
@@ -286,7 +281,6 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  width: 50%;
 }
 
 .myDevIcon {
@@ -316,22 +310,12 @@ header {
           align-items: center;
 }
 
-.logo {
-  position: fixed;
-  top: 8.2%;
-  right: 7%;
-}
-
 .logoColor {
   color: #e85868;
 }
 
 .directionalNav {
-  position: fixed;
-  padding-left: 2%;
-  top: 3%;
-  left: 0;
-  z-index: 5;
+  border-top: 2px solid #e85868;
 }
 
 .directionalNav ul {
@@ -348,40 +332,25 @@ header {
 }
 
 .innerLayer {
-  position: relative;
-  width: 90%;
-  height: 90%;
-}
-
-.overlay {
-  position: fixed;
-  width: 95vw;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.innerLay {
-  position: fixed;
-  width: 95%;
-  padding: 1%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
   height: 90%;
-  border-top: 2px solid #e85868;
-  border-bottom: 2px solid #e85868;
 }
 
 .socialMediaNav {
-  position: fixed;
-  left: 0;
-  bottom: 3%;
-  z-index: 5;
+  border-bottom: 2px solid #e85868;
 }
 
 .socialMediaNav ul {
@@ -507,10 +476,6 @@ header {
   border-radius: 100%;
 }
 
-.socNav {
-  isolation: isolate;
-}
-
 .toolsList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,10 +484,6 @@ header {
 
 .toolsList div {
   padding: 0 6% 0 0;
-}
-
-.typingAnimation {
-  padding-left: 5%;
 }
 
 .portfolioOne aside {
@@ -623,11 +584,6 @@ header {
   display: flex;
 }
 
-.aboutMe article {
-  width: 90%;
-  margin: 5%;
-}
-
 .picturePerfect {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,16 +600,16 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.displayStatus {
+  display: none;
 }
 
 .highlight {
@@ -685,18 +641,6 @@ header {
 }
 
 .portfolioInnerThree {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.portfolioInnerAbout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -797,11 +741,6 @@ header {
 .aboutMe {
   background-color: #0f0a0a;
   color: #7be5ab;
-}
-
-.aboutMe img {
-  border: 3px solid #e85868;
-  width: 100px;
 }
 
 .skills {
@@ -924,153 +863,5 @@ header {
 
 footer {
   background-color: #ffc857;
-}
-
-@media (max-width: 1100px) {
-  .innerLayer {
-    width: 97%;
-    height: 95%;
-  }
-  .innerLay {
-    height: 95%;
-  }
-  .portfolioOne aside {
-    margin: 1%;
-    width: 40%;
-  }
-  .portfolioOne article {
-    margin: 1%;
-    width: 50%;
-  }
-  .portfolioTwo aside {
-    margin: 1%;
-    width: 40%;
-  }
-  .portfolioTwo article {
-    margin: 1%;
-    width: 50%;
-  }
-  .portfolioThree aside {
-    width: 40%;
-    margin: 1%;
-  }
-  .portfolioThree article {
-    width: 50%;
-    margin: 1%;
-  }
-  .directionalNav {
-    top: 0%;
-  }
-  .socialMediaNav {
-    bottom: 0%;
-  }
-}
-
-@media (max-width: 870px) {
-  header {
-    height: 100vh;
-  }
-  .portfolioOne,
-  .portfolioTwo,
-  .portfolioThree,
-  .aboutMe,
-  footer {
-    width: 95vw;
-    height: auto;
-    max-height: 1000px;
-    max-width: 1600px;
-    min-height: 568px;
-    min-width: 320px;
-    margin: 15% 0 15% 0;
-  }
-  .portfolioInnerOne {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .portfolioInnerTwo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .portfolioInnerThree {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .portfolioOne aside {
-    margin: 1%;
-    width: 98%;
-  }
-  .portfolioOne article {
-    margin: 1%;
-    width: 98%;
-  }
-  .portfolioTwo aside {
-    margin: 1%;
-    width: 98%;
-  }
-  .portfolioTwo article {
-    margin: 1%;
-    width: 98%;
-  }
-  .portfolioThree aside {
-    width: 98%;
-    margin: 1%;
-  }
-  .portfolioThree article {
-    width: 98%;
-    margin: 1%;
-  }
-  .directionalNav {
-    position: absolute;
-    width: 100%;
-  }
-  .directionalNav a {
-    width: auto;
-  }
-  .directionalNav ul {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-    padding-right: 40px;
-  }
-  .directionalNav li {
-    margin: 0;
-  }
-  .socialMediaNav {
-    position: absolute;
-    width: 100%;
-  }
-  .socialMediaNav a {
-    width: auto;
-  }
-  .socialMediaNav ul {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-    padding-right: 40px;
-  }
-  .socialMediaNav li {
-    margin: 0;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  .myDevIcon {
-    font-size: 1.5rem;
-  }
-  p {
-    font-size: 0.9rem;
-  }
-  .innerLay {
-    border-top: none;
-    border-bottom: none;
-  }
 }
 /*# sourceMappingURL=style.css.map */

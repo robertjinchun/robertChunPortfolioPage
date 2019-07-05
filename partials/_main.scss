@@ -72,8 +72,8 @@
 }
 
 .aboutMe article {
-    width: 90%;
-    margin: 5%;
+    // width: 90%;
+    // margin: 5%;
 }
 
 .picturePerfect {
@@ -86,9 +86,13 @@
 .portfolioThree,
 .aboutMe {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.displayStatus {
+    display: none;
 }
 
 .highlight {
@@ -114,9 +118,9 @@
 }
 
 .portfolioInnerAbout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
 .portfolioOne {
@@ -205,13 +209,6 @@
 .aboutMe {
     background-color: $offBlack;
     color: $backColorFirst;
-
-    img {
-        border: 3px solid $backColorThird;
-        // border-radius: 50%;
-        width: 100px;
-        // height:50%;
-    }
 }
 
 .skills {
@@ -227,10 +224,6 @@
         color: $backColorSecond;
         width: 80%;
     }
-}
-
-.aboutTitle {
-    // margin-left: 5%;
 }
 
 //SFX for button

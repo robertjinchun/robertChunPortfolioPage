@@ -12,11 +12,12 @@ sans-serif;
 $fontSecondary: 'Roboto Mono',
 monospace;
 
-html {
+html, body {
     scroll-behavior: smooth;
     background-color: $offBlack;
     color: $offWhite;
     font-size: 125%;
+    
 }
 
 body {
@@ -26,12 +27,8 @@ body {
     align-items: center;
 }
 
-header,
-.portfolioOne,
-.portfolioTwo,
-.portfolioThree,
-.aboutMe,
-footer {
+header
+{
     width: 95vw;
     height: 100vh;
     max-height: 1200px;
@@ -80,7 +77,7 @@ li {
 a {
     text-decoration: none;
     color: inherit;
-    width:50%;
+    // width:50%;
     // padding:2%;
 }
 
