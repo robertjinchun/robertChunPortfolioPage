@@ -38,17 +38,22 @@
 
     header {
         // width: 95vw;
-        // height: auto;
+        height: auto;
         // max-height: 1000px;
         // max-width: 1600px;
         // 568
-        height:auto;
-        min-height: 800px;
-        min-width: 320px;
+        // height:auto;
+        min-height: auto;
+        // min-width: 320px;
         // margin: 15% 0 15% 0;
     }
 
-
+    .typingAnimation {
+        margin:30% 0;
+    }
+    .innerLayer{
+        height:auto;
+    }
 
     .portfolioInnerOne {
         flex-direction: column-reverse;
@@ -146,12 +151,10 @@
 
 }
 
-@media (max-height:500px) {
+@media (max-width:500px) {
 
-    .innerlayer, header {
-        min-height:400px;
+    .innerlayer,
+    header {
+        // min-height:400px;
     }
-
-
-    
 }

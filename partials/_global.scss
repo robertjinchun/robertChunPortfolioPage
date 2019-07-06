@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-    height:100vh;
+    // height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,8 +35,8 @@ header
     // max-height: 2000px;
     max-width: 3840px;
     // 568
-    min-height: 568px;
-    min-width: 320px;
+    min-height: 1000px;
+    // min-width: 320px;
 }
 
 li {

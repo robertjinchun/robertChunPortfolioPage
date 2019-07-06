@@ -218,7 +218,6 @@ html, body {
 }
 
 body {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,8 +237,7 @@ header {
   width: 95vw;
   height: 100vh;
   max-width: 3840px;
-  min-height: 568px;
-  min-width: 320px;
+  min-height: 1000px;
 }
 
 li {
@@ -863,8 +861,13 @@ footer {
 @media (max-width: 870px) {
   header {
     height: auto;
-    min-height: 800px;
-    min-width: 320px;
+    min-height: auto;
+  }
+  .typingAnimation {
+    margin: 30% 0;
+  }
+  .innerLayer {
+    height: auto;
   }
   .portfolioInnerOne {
     -webkit-box-orient: vertical;
@@ -943,12 +946,6 @@ footer {
   }
   p {
     font-size: 0.9rem;
-  }
-}
-
-@media (max-height: 500px) {
-  .innerlayer, header {
-    min-height: 400px;
   }
 }
 /*# sourceMappingURL=style.css.map */
