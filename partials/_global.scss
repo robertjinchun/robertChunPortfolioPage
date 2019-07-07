@@ -6,7 +6,6 @@ $backColorThird: #e85868;
 $backColorFifth: #fbd1a2;
 $backColorSecond: #e9d758;
 $backColorSixth: #ffc857;
-// $colortertiary: not sure
 $fontPrimary: 'Rubik',
 sans-serif;
 $fontSecondary: 'Roboto Mono',
@@ -18,12 +17,9 @@ body {
     background-color: $offBlack;
     color: $offWhite;
     font-size: 125%;
-
-
 }
 
 body {
-    // height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,13 +32,7 @@ header {
     max-width: 3840px;
     max-height: 2000px;
     min-width: 320px;
-    min-height: 900px;
-    // height: 100%;
-    // max-height: 2000px;
-    // max-width: 3840px;
-    // 568
-    // min-height: 800px;
-    // min-width: 320px;
+    min-height: 1000px;
 }
 
 li {
@@ -88,8 +78,6 @@ li {
 a {
     text-decoration: none;
     color: inherit;
-    // width:50%;
-    // padding:2%;
 }
 
 .myDevIcon {

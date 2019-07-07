@@ -240,7 +240,7 @@ header {
   max-width: 3840px;
   max-height: 2000px;
   min-width: 320px;
-  min-height: 900px;
+  min-height: 1000px;
 }
 
 li {
@@ -746,12 +746,17 @@ header {
   position: relative;
   border: 3px solid #e85868;
   border-radius: 20px;
-  padding: 5%;
   margin-bottom: 3%;
   text-align: center;
   overflow: hidden;
   -webkit-transition: color 0.4s ease-in-out;
   transition: color 0.4s ease-in-out;
+}
+
+.projectOneButton h4,
+.projectTwoButton h4,
+.projectThreeButton h4 {
+  padding: 0 10px;
 }
 
 .projectOneButton::before,
@@ -763,7 +768,6 @@ header {
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  background-color: #7be5ab;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
@@ -778,7 +782,7 @@ header {
 .projectTwoButton:hover,
 .projectThreeButton:hover {
   cursor: pointer;
-  color: #e85868;
+  background-color: #e85868;
 }
 
 .projectOneButton:hover::before,
@@ -949,6 +953,12 @@ footer {
   }
   p {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .innerLayer {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

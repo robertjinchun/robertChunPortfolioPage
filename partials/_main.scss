@@ -213,11 +213,15 @@
     border: 3px solid $backColorThird;
     border-radius: 20px;
     // width:100%;
-    padding: 5%;
+    // padding: 5%;
     margin-bottom: 3%;
     text-align: center;
     overflow: hidden;
     transition: color 0.4s ease-in-out;
+
+    h4 {
+        padding: 0 10px;
+    }
 }
 
 .projectOneButton::before,
@@ -231,7 +235,7 @@
     // width: 1em;
     // height: 1em;
     border-radius: 50%;
-    background-color: $backColorFirst;
+    // background-color: $backColorFirst;
     transform-origin: center;
     transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
     transition: transform 0.45s ease-in-out;
@@ -241,7 +245,7 @@
 .projectTwoButton:hover,
 .projectThreeButton:hover {
     cursor: pointer;
-    color: $backColorThird;
+    background-color: $backColorThird;
 }
 
 .projectOneButton:hover::before,
@@ -252,6 +256,7 @@
 
 .direction {
     position: relative;
+    // color: $backColorThird;
     padding: 3px;
     cursor: pointer;
 }
