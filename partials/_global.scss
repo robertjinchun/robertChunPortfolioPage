@@ -12,12 +12,14 @@ sans-serif;
 $fontSecondary: 'Roboto Mono',
 monospace;
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
     background-color: $offBlack;
     color: $offWhite;
     font-size: 125%;
-    
+
+
 }
 
 body {
@@ -28,22 +30,27 @@ body {
     align-items: center;
 }
 
-header
-{
+header {
     width: 95vw;
     height: 100vh;
-    // max-height: 2000px;
     max-width: 3840px;
+    max-height: 2000px;
+    min-width: 320px;
+    min-height: 900px;
+    // height: 100%;
+    // max-height: 2000px;
+    // max-width: 3840px;
     // 568
-    min-height: 1000px;
+    // min-height: 800px;
     // min-width: 320px;
 }
 
 li {
     list-style: none;
 }
-ul{
-    padding-left:0;
+
+ul {
+    padding-left: 0;
 }
 
 h1,

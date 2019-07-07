@@ -5,7 +5,6 @@
         width: 40%;
     }
 
-
     .portfolioOne article {
         margin: 1%;
         width: 50%;
@@ -30,31 +29,9 @@
         width: 50%;
         margin: 1%;
     }
-
-
 }
 
 @media (max-width:870px) {
-
-    header {
-        // width: 95vw;
-        height: auto;
-        // max-height: 1000px;
-        // max-width: 1600px;
-        // 568
-        // height:auto;
-        min-height: auto;
-        // min-width: 320px;
-        // margin: 15% 0 15% 0;
-    }
-
-    .typingAnimation {
-        margin:30% 0;
-    }
-    .innerLayer{
-        height:auto;
-    }
-
     .portfolioInnerOne {
         flex-direction: column-reverse;
     }
@@ -91,7 +68,6 @@
     .portfolioThree aside {
         width: 98%;
         margin: 1%;
-        // padding-bottom:30%;
     }
 
     .portfolioThree article {
@@ -108,7 +84,6 @@
         ul {
             justify-content: space-between;
             width: 100%;
-            // padding-right: 40px;
         }
 
         li {
@@ -117,9 +92,6 @@
     }
 
     .socialMediaNav {
-        // position: absolute;
-        // display:flex;
-        // justify-content:space-between;
         width: 100%;
 
         a {
@@ -129,7 +101,6 @@
         ul {
             justify-content: space-between;
             width: 100%;
-            // padding-right: 40px;
         }
 
         li {
@@ -149,12 +120,4 @@
         font-size: 0.9rem;
     }
 
-}
-
-@media (max-width:500px) {
-
-    .innerlayer,
-    header {
-        // min-height:400px;
-    }
 }
